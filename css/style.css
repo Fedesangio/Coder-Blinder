@@ -1153,6 +1153,10 @@ footer h6 {
     width: auto;
 }
 
+.footer-datos {
+    text-align: center;
+}
+
 /*!-------------------------------------------------MEDIA--500-------PRODUCTOS*/
 
     .productos {
