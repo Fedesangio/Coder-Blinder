@@ -1,5 +1,5 @@
 <h1 align="center">Hola soy, Federico Sangiovanni</h1>
-<h3 align="center">Este proyecto forma parte del curso de Desarrollo Web de Coderhouse, que estoy cursando. Se use para desarrollarlo HTML, CSS y Bootstrap.</h3>
+<h3 align="center">Este proyecto forma parte del curso de Desarrollo Web de Coderhouse, que estoy cursando. Utilice para desarrollarlo HTML, CSS y Bootstrap.</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
