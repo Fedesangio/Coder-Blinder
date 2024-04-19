@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/*--PROPIEDADES GENERALES A TODO EL DOCUMENTO TIPOGRAFIA, MARGENES, BOOTSTRAP, CLASES QUE REUTILICES, TODO LO QUE NO SEA NECESARIO ANIDAR--*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu:opsz,wght@12..72,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*HACE QUE LOS ELEMENTOS MIDAN LO QUE TIENEN QUE MEDIR*/ }
+
+/**--------NAV BOOTS*/
+.barra-nav a {
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 1.4rem;
+  font-family: truculenta !important;
+  text-shadow: 8px 4px 8px black;
+  margin: 0 20px; }
+
+/*-FONDO NEGRO NAV-*/
+.barra-nav {
+  background-color: rgba(0, 0, 0, 0.592); }
+
+.sin-sombra a {
+  text-shadow: none; }
+
+.dropdown-menu li a {
+  color: black !important; }
+
+.categorias-contenedor {
+  /*propiedades contenedores*/
+  border: 1px black solid;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.categorias p {
+  height: 80px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-family: poppins;
+  font-size: 13px;
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+.categorias a {
+  height: 400px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 49px;
+  margin: 15px;
+  text-shadow: 8px 8px 16px black;
+  text-align: center; }
+
+.bienvenidos p {
+  /*texto dentro de los contenedores*/
+  font-family: truculenta;
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.652);
+  border-radius: 2px, solid, white; }
+
+.bienvenidos img {
+  width: 500px;
+  height: 400px; }
+
+.imagenes-redes {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px; }
+
+/*----*/
+.header-index {
+  background-image: url(../img/prueba124fondo.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+  .header-index .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    height: calc(100vh - 104px); }
+    .header-index .hero .hero-titulo-boton {
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 90px; }
+      .header-index .hero .hero-titulo-boton h3 {
+        font-size: 30px;
+        color: white;
+        font-family: truculenta;
+        font-weight: bold;
+        text-shadow: 8px 8px 16px black;
+        margin-bottom: 30px; }
+      .header-index .hero .hero-titulo-boton a {
+        background-color: #ffffff8b;
+        /* Color de fondo */
+        /*border: 4px solid #e79406aa; /* Borde*/
+        color: green;
+        /* Color del texto */
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+        /* Alineación del texto */
+        text-decoration: none;
+        /* Sin   subrayado */
+        font-size: 60px;
+        /* Tamaño de la fuente */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        padding: 5px 40px 5px 40px;
+        height: 100px;
+        font-family: truculenta;
+        font-style: inherit;
+        font-weight: bold; }
+    .header-index .hero .hero-imagenes img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 90px; }
+
+main {
+  background-image: url(../img/maderacuadraditos.jpg); }
+  main .nosotros h1 {
+    font-size: 80px;
+    color: white;
+    font-family: truculenta;
+    text-shadow: 8px 8px 16px black;
+    margin: 0 100px;
+    text-align: center;
+    height: auto; }
+  main .nosotros p {
+    font-size: 30px;
+    color: white;
+    background-color: rgba(14, 80, 14, 0.447);
+    padding: 50px 200px;
+    text-align: center;
+    font-family: truculenta;
+    text-shadow: 8px 8px 16px black; }
+  main .categorias {
+    margin-top: 30px; }
+    main .categorias div {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      grid-auto-rows: auto;
+      align-items: center;
+      /* Espacio entre las celdas */ }
+      main .categorias div .imagen-primer-contenedor {
+        background-image: url(../img/productos/branca1.jpg);
+        background-position: center; }
+        main .categorias div .imagen-primer-contenedor:hover {
+          scale: 1.1; }
+      main .categorias div .imagen-segundo-contenedor {
+        background-image: url(../img/productos/tanqueray1.jpg);
+        background-position: center; }
+        main .categorias div .imagen-segundo-contenedor:hover {
+          scale: 1.1; }
+      main .categorias div .imagen-tercer-contenedor {
+        background-image: url(../img/productos/jagermaister1.jpg);
+        background-position: center; }
+        main .categorias div .imagen-tercer-contenedor:hover {
+          scale: 1.1; }
+      main .categorias div .imagen-cuarto-contenedor {
+        background-image: url(../img/productos/bluelabel1.jpg);
+        background-size: cover; }
+        main .categorias div .imagen-cuarto-contenedor:hover {
+          scale: 1.1; }
+  main .bienvenidos {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; }
+    main .bienvenidos div {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px; }
+    main .bienvenidos .bienvenidos-segundo-contenedor {
+      flex-direction: row-reverse; }
+  main .hashtag {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .hashtag img {
+      width: 500px;
+      height: 200px; }
+  main .fotos-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; }
+    main .fotos-grid .galeria-grid {
+      max-width: 70%;
+      /*define el tamaño de la grilla*/
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 250px;
+      grid-gap: 10px;
+      /* Espacio entre las celdas */
+      margin: 50px; }
+      main .fotos-grid .galeria-grid div img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px; }
+    main .fotos-grid .galeria-grid .img-a {
+      grid-column: 1/3; }
+    main .fotos-grid .galeria-grid .img-b {
+      grid-column: 3/5; }
+    main .fotos-grid .galeria-grid .img-d {
+      grid-column: 2/4;
+      grid-row: 2/4; }
+    main .fotos-grid .galeria-grid .img-f {
+      grid-row: 3/5; }
+    main .fotos-grid .galeria-grid .img-g {
+      grid-row: 3/5; }
+  main .fixed img {
+    /* Imagen de WHatsapp FLotante*/
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    /*Fija la posicion en la pagina*/
+    bottom: 30px;
+    right: 30px; }
+
+footer {
+  background-image: url(../img/fondo.jpg);
+  height: auto; }
+  footer section {
+    max-width: 100%;
+    /*define el tamaño de la grilla*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto; }
+    footer section .imagen-footer {
+      margin: 0 auto; }
+      footer section .imagen-footer .logo-footer {
+        margin-top: 30px;
+        width: 200px;
+        height: 150px; }
+    footer section .footer-h6 h6 {
+      color: white;
+      text-align: center;
+      font-size: 22px;
+      font-family: truculenta;
+      font-weight: 400;
+      margin-top: 60px;
+      margin-left: 40px;
+      width: 250px; }
+    footer section .footer-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      footer section .footer-nav ul {
+        list-style: none;
+        /*Saca la viñeta de la lista*/
+        text-align: center; }
+        footer section .footer-nav ul li {
+          margin-top: 20px; }
+          footer section .footer-nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: truculenta; }
+    footer section .footer-datos {
+      color: white;
+      font-size: 19px;
+      font-family: truculenta;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left; }
+      footer section .footer-datos div h5 {
+        margin: 30px 0px;
+        text-align: center; }
+      footer section .footer-datos div p {
+        margin: 15px 0px; }
+      footer section .footer-datos div p {
+        margin: 15px 0px; }
+      footer section .footer-datos div p {
+        margin: 15px 0px; }
+      footer section .footer-datos div a img {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px; }
+      footer section .footer-datos div a img {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px; }
+
+/*--VAN LAS MEDIA QUERYS SIEMPRE RESPETANDO LA ANIDACION QUE REALICENMOS EN EL DOCUMENTO DE COMPONENTES*/

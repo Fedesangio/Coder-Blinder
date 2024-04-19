@@ -1,0 +1,90 @@
+/*--PROPIEDADES GENERALES A TODO EL DOCUMENTO TIPOGRAFIA, MARGENES, BOOTSTRAP, CLASES QUE REUTILICES, TODO LO QUE NO SEA NECESARIO ANIDAR--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu:opsz,wght@12..72,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*HACE QUE LOS ELEMENTOS MIDAN LO QUE TIENEN QUE MEDIR*/
+}
+
+/**--------NAV BOOTS*/
+.barra-nav a {
+    text-decoration: none!important;
+    color: white!important;
+    font-size: 1.4rem;
+    font-family: truculenta!important;
+    text-shadow: 8px 4px 8px black;
+    margin: 0 20px;
+}
+
+/*-FONDO NEGRO NAV-*/
+.barra-nav {
+    background-color: rgba(0, 0, 0, 0.592);
+}
+.sin-sombra a {
+    text-shadow: none;
+}
+.dropdown-menu li a {
+    color: black!important
+}
+
+.categorias-contenedor { /*propiedades contenedores*/
+    border: 1px black solid;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categorias p {
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-family: poppins;
+    font-size: 13px;
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.categorias a {
+    height: 400px;
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 49px;
+    margin: 15px;
+    text-shadow: 8px 8px 16px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.bienvenidos p { /*texto dentro de los contenedores*/
+    font-family: truculenta;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    padding: 60px;
+    background-color: rgba(0, 0, 0, 0.652);
+    border-radius: 2px, solid, white;
+}
+
+.bienvenidos img {
+    width: 500px;
+    height: 400px;
+}
+
+.imagenes-redes {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}

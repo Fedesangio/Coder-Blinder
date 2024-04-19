@@ -1,0 +1,295 @@
+.header-index {
+    background-image: url(../img/prueba124fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center ;
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: end;
+        height: calc(100vh - 104px);
+        .hero-titulo-boton {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: 90px;
+                h3 {
+                    font-size: 30px;
+                    color: white;
+                    font-family: truculenta;
+                    font-weight: bold;
+                    text-shadow: 8px 8px 16px black;
+                    margin-bottom: 30px;
+
+            }
+                a {
+                    background-color: #ffffff8b; /* Color de fondo */
+                    /*border: 4px solid #e79406aa; /* Borde*/
+                    color: green; /* Color del texto */
+                    text-shadow: 1px 1px 2px black;
+                    text-align: center; /* Alineación del texto */
+                    text-decoration: none; /* Sin   subrayado */
+                    font-size: 60px; /* Tamaño de la fuente */
+                    border-radius: 10px; /* Bordes redondeados */
+                    padding: 5px 40px 5px 40px;
+                    height: 100px;
+                    font-family: truculenta;
+                    font-style: inherit;
+                    font-weight: bold;
+            }
+    }
+        .hero-imagenes {
+                img {
+                    width: 150px;
+                    height: 150px;
+                    margin-bottom: 90px;
+        }
+    }
+}
+}
+main  {
+    background-image: url(../img/maderacuadraditos.jpg);
+    .nosotros {
+        h1 {
+            font-size: 80px;
+            color: white;
+            font-family: truculenta;
+            text-shadow: 8px 8px 16px black;
+            margin: 0 100px;
+            text-align: center;
+            height: auto;
+
+        }
+        p {
+            font-size: 30px;
+            color: white;
+            background-color: rgba(14, 80, 14, 0.447);
+            padding: 50px 200px;
+            text-align: center;
+            font-family: truculenta;
+            text-shadow: 8px 8px 16px black;
+        }
+}
+    .categorias {
+            margin-top: 30px;
+        div {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            grid-auto-rows: auto;
+            align-items: center;            /* Espacio entre las celdas */
+            .imagen-primer-contenedor{
+                background-image: url(../img/productos/branca1.jpg);
+                background-position: center;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+            .imagen-segundo-contenedor{
+                background-image: url(../img/productos/tanqueray1.jpg);
+                background-position: center;
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+            .imagen-tercer-contenedor{
+                background-image: url(../img/productos/jagermaister1.jpg);
+                background-position: center;
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+            .imagen-cuarto-contenedor{
+                background-image: url(../img/productos/bluelabel1.jpg);
+                background-size: cover;
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+    .bienvenidos {
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        div {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .bienvenidos-segundo-contenedor {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .hashtag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 500px;
+            height: 200px;
+        }
+    }
+
+    .fotos-grid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        .galeria-grid {
+            max-width: 70%;
+            /*define el tamaño de la grilla*/
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 250px;
+            grid-gap: 10px;
+            /* Espacio entre las celdas */
+            margin: 50px;
+            div {
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .galeria-grid .img-a {
+            grid-column: 1/3;
+        }
+        .galeria-grid .img-b {
+            grid-column: 3/5;
+        }
+        .galeria-grid .img-d {
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+        .galeria-grid .img-f {
+            grid-row: 3/5;
+        }
+        .galeria-grid .img-g {
+            grid-row: 3/5;
+        }
+}
+
+    .fixed {
+        img {
+            /* Imagen de WHatsapp FLotante*/
+    width: 60px;
+    height: 60px;
+    position: fixed;
+/*Fija la posicion en la pagina*/
+    bottom: 30px;
+    right: 30px;
+
+        }
+}
+}
+
+footer {
+            background-image: url(../img/fondo.jpg);
+        height: auto;
+    section {
+        max-width: 100%;
+        /*define el tamaño de la grilla*/
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+
+            .imagen-footer {
+            margin: 0 auto;
+            .logo-footer{
+                margin-top: 30px;
+                width: 200px;
+                height: 150px;
+        }
+        }
+        .footer-h6 {
+            h6 {
+                color: white;
+                text-align: center;
+                font-size: 22px;
+                font-family: truculenta;
+                font-weight: 400;
+                margin-top: 60px;
+                margin-left: 40px;
+                width: 250px;
+            }
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            ul {
+                list-style: none;
+                /*Saca la viñeta de la lista*/
+                text-align: center;
+                li {
+                    margin-top: 20px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        font-family: truculenta;
+                    }
+                }
+            }
+        }
+        .footer-datos {
+            color: white;
+            font-size: 19px;
+            font-family: truculenta;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            div {
+                h5 {
+                    margin: 30px 0px;
+                    text-align: center;
+                }
+                p {
+                    margin: 15px 0px;
+                }
+                p {
+                    margin: 15px 0px;
+                }
+                p {
+                    margin: 15px 0px;
+                }
+            }
+            div {
+                a {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 20px;
+                    }
+                }
+                a {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
