@@ -1,0 +1,35 @@
+main {
+    background-image: none;
+    .frecuentes {
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .frecuentes-desplega {
+            margin-left: 30px;
+            width: 800px;
+            h3 {
+                font-size: 25px;
+                margin: 30px 30px;
+            }
+        }
+        .frecuentes2 {
+            background-color: #2324255f;
+            h3 {
+                font-size: 25px;
+                margin: 30px 30px;
+            }
+            p {
+
+                padding: 20px;
+                font-size: 16px;
+                text-align: center;
+            }
+            img {
+                margin-left: 30px;
+                margin-top: 20px;
+                width: 90%;
+            }
+        }
+}
+}

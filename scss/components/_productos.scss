@@ -1,0 +1,78 @@
+main {
+    .productos {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        /* Espacio entre las celdas */
+        grid-gap: 30px;
+        /* Espacio entre las celdas */
+        margin: auto;
+        padding-bottom: 30px;
+        .primer-banner {
+            grid-column: 1/6;
+        }
+        .segundo-banner {
+            grid-column: 1/6;
+        }
+        .tercer-banner {
+            grid-column: 1/6;
+        }
+        .cuarto-banner {
+            grid-column: 1/6;
+        }
+            h2 {
+                color: white;
+                font-family: truculenta;
+                font-size: 70px;
+                text-align: center;
+                text-shadow: 2px 2px 4px black
+            }
+        .productos-contenedor {
+            height: auto;
+            width: auto;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            border-radius: 15px;
+            &:hover {
+                scale: 1.2;
+            }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 150px;
+                        height: 150px;
+
+                    }
+                    h3 {
+                        width: 90%;
+                        height: 50px;
+                        color: black;
+                        font-family: poppins;
+                        font-weight: 600;
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                }
+                div {
+                    p {
+                        text-align: center;
+                        font-size: 19px;
+                        font-weight: 600;
+                    }
+                .seleccionar-cantidad {
+                    display: flex;
+
+                }
+                a {
+                    text-decoration: none;
+                    margin-top: 1rem;
+                }
+                }
+        }
+    }
+}

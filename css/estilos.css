@@ -9,6 +9,10 @@
   box-sizing: border-box;
   /*HACE QUE LOS ELEMENTOS MIDAN LO QUE TIENEN QUE MEDIR*/ }
 
+/*fondo main*/
+.background-main {
+  background-image: url(../img/maderacuadraditos.jpg); }
+
 /**--------NAV BOOTS*/
 .barra-nav a {
   text-decoration: none !important;
@@ -79,167 +83,27 @@
   height: 50px;
   margin-left: 20px; }
 
-/*----*/
-.header-index {
-  background-image: url(../img/prueba124fondo.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center; }
-  .header-index .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: end;
-    height: calc(100vh - 104px); }
-    .header-index .hero .hero-titulo-boton {
-      width: 80%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-bottom: 90px; }
-      .header-index .hero .hero-titulo-boton h3 {
-        font-size: 30px;
-        color: white;
-        font-family: truculenta;
-        font-weight: bold;
-        text-shadow: 8px 8px 16px black;
-        margin-bottom: 30px; }
-      .header-index .hero .hero-titulo-boton a {
-        background-color: #ffffff8b;
-        /* Color de fondo */
-        /*border: 4px solid #e79406aa; /* Borde*/
-        color: green;
-        /* Color del texto */
-        text-shadow: 1px 1px 2px black;
-        text-align: center;
-        /* Alineación del texto */
-        text-decoration: none;
-        /* Sin   subrayado */
-        font-size: 60px;
-        /* Tamaño de la fuente */
-        border-radius: 10px;
-        /* Bordes redondeados */
-        padding: 5px 40px 5px 40px;
-        height: 100px;
-        font-family: truculenta;
-        font-style: inherit;
-        font-weight: bold; }
-    .header-index .hero .hero-imagenes img {
-      width: 150px;
-      height: 150px;
-      margin-bottom: 90px; }
+/*PAGINA DE PRODUCTOS*/
+.productos-nav-bar {
+  background-image: url(../img/fondo.jpg); }
 
-main {
-  background-image: url(../img/maderacuadraditos.jpg); }
-  main .nosotros h1 {
-    font-size: 80px;
-    color: white;
-    font-family: truculenta;
-    text-shadow: 8px 8px 16px black;
-    margin: 0 100px;
-    text-align: center;
-    height: auto; }
-  main .nosotros p {
-    font-size: 30px;
-    color: white;
-    background-color: rgba(14, 80, 14, 0.447);
-    padding: 50px 200px;
-    text-align: center;
-    font-family: truculenta;
-    text-shadow: 8px 8px 16px black; }
-  main .categorias {
-    margin-top: 30px; }
-    main .categorias div {
-      width: 90%;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 10px;
-      grid-auto-rows: auto;
-      align-items: center;
-      /* Espacio entre las celdas */ }
-      main .categorias div .imagen-primer-contenedor {
-        background-image: url(../img/productos/branca1.jpg);
-        background-position: center; }
-        main .categorias div .imagen-primer-contenedor:hover {
-          scale: 1.1; }
-      main .categorias div .imagen-segundo-contenedor {
-        background-image: url(../img/productos/tanqueray1.jpg);
-        background-position: center; }
-        main .categorias div .imagen-segundo-contenedor:hover {
-          scale: 1.1; }
-      main .categorias div .imagen-tercer-contenedor {
-        background-image: url(../img/productos/jagermaister1.jpg);
-        background-position: center; }
-        main .categorias div .imagen-tercer-contenedor:hover {
-          scale: 1.1; }
-      main .categorias div .imagen-cuarto-contenedor {
-        background-image: url(../img/productos/bluelabel1.jpg);
-        background-size: cover; }
-        main .categorias div .imagen-cuarto-contenedor:hover {
-          scale: 1.1; }
-  main .bienvenidos {
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; }
-    main .bienvenidos div {
-      width: 80%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px; }
-    main .bienvenidos .bienvenidos-segundo-contenedor {
-      flex-direction: row-reverse; }
-  main .hashtag {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    main .hashtag img {
-      width: 500px;
-      height: 200px; }
-  main .fotos-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; }
-    main .fotos-grid .galeria-grid {
-      max-width: 70%;
-      /*define el tamaño de la grilla*/
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 250px;
-      grid-gap: 10px;
-      /* Espacio entre las celdas */
-      margin: 50px; }
-      main .fotos-grid .galeria-grid div img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px; }
-    main .fotos-grid .galeria-grid .img-a {
-      grid-column: 1/3; }
-    main .fotos-grid .galeria-grid .img-b {
-      grid-column: 3/5; }
-    main .fotos-grid .galeria-grid .img-d {
-      grid-column: 2/4;
-      grid-row: 2/4; }
-    main .fotos-grid .galeria-grid .img-f {
-      grid-row: 3/5; }
-    main .fotos-grid .galeria-grid .img-g {
-      grid-row: 3/5; }
-  main .fixed img {
-    /* Imagen de WHatsapp FLotante*/
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    /*Fija la posicion en la pagina*/
-    bottom: 30px;
-    right: 30px; }
+.boton-comprar {
+  background-color: #690507fc;
+  /* Color de fondo */
+  border: 2px solid black;
+  /* Borde*/
+  color: white !important;
+  /* Color del texto */
+  text-align: center;
+  /* Alineación del texto */
+  text-decoration: none;
+  /* Sin   subrayado */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  padding: 5px 40px 5px 40px;
+  margin-bottom: 5px; }
 
 footer {
   background-image: url(../img/fondo.jpg);
@@ -295,17 +159,265 @@ footer {
         text-align: center; }
       footer section .footer-datos div p {
         margin: 15px 0px; }
-      footer section .footer-datos div p {
-        margin: 15px 0px; }
-      footer section .footer-datos div p {
-        margin: 15px 0px; }
       footer section .footer-datos div a img {
         width: 50px;
         height: 50px;
         margin-left: 20px; }
-      footer section .footer-datos div a img {
-        width: 50px;
+
+/*----*/
+.header-index {
+  background-image: url(../img/prueba124fondo.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+  .header-index .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    height: calc(100vh - 104px); }
+    .header-index .hero .hero-titulo-boton {
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 90px; }
+      .header-index .hero .hero-titulo-boton h3 {
+        font-size: 30px;
+        color: white;
+        font-family: truculenta;
+        font-weight: bold;
+        text-shadow: 8px 8px 16px black;
+        margin-bottom: 30px; }
+      .header-index .hero .hero-titulo-boton a {
+        background-color: #ffffff8b;
+        /* Color de fondo */
+        /*border: 4px solid #e79406aa; /* Borde*/
+        color: green;
+        /* Color del texto */
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+        /* Alineación del texto */
+        text-decoration: none;
+        /* Sin   subrayado */
+        font-size: 60px;
+        /* Tamaño de la fuente */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        padding: 5px 40px 5px 40px;
+        height: 100px;
+        font-family: truculenta;
+        font-style: inherit;
+        font-weight: bold; }
+    .header-index .hero .hero-imagenes img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 90px; }
+
+main .nosotros h1 {
+  font-size: 80px;
+  color: white;
+  font-family: truculenta;
+  text-shadow: 8px 8px 16px black;
+  margin: 0 100px;
+  text-align: center;
+  height: auto; }
+
+main .nosotros p {
+  font-size: 30px;
+  color: white;
+  background-color: rgba(14, 80, 14, 0.447);
+  padding: 50px 200px;
+  text-align: center;
+  font-family: truculenta;
+  text-shadow: 8px 8px 16px black; }
+
+main .categorias {
+  margin-top: 30px; }
+  main .categorias div {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    grid-auto-rows: auto;
+    align-items: center;
+    /* Espacio entre las celdas */ }
+    main .categorias div .imagen-primer-contenedor {
+      background-image: url(../img/productos/branca1.jpg);
+      background-position: center; }
+      main .categorias div .imagen-primer-contenedor:hover {
+        scale: 1.1; }
+    main .categorias div .imagen-segundo-contenedor {
+      background-image: url(../img/productos/tanqueray1.jpg);
+      background-position: center; }
+      main .categorias div .imagen-segundo-contenedor:hover {
+        scale: 1.1; }
+    main .categorias div .imagen-tercer-contenedor {
+      background-image: url(../img/productos/jagermaister1.jpg);
+      background-position: center; }
+      main .categorias div .imagen-tercer-contenedor:hover {
+        scale: 1.1; }
+    main .categorias div .imagen-cuarto-contenedor {
+      background-image: url(../img/productos/bluelabel1.jpg);
+      background-size: cover; }
+      main .categorias div .imagen-cuarto-contenedor:hover {
+        scale: 1.1; }
+
+main .bienvenidos {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; }
+  main .bienvenidos div {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; }
+  main .bienvenidos .bienvenidos-segundo-contenedor {
+    flex-direction: row-reverse; }
+
+main .hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .hashtag img {
+    width: 500px;
+    height: 200px; }
+
+main .fotos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  main .fotos-grid .galeria-grid {
+    max-width: 70%;
+    /*define el tamaño de la grilla*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 10px;
+    /* Espacio entre las celdas */
+    margin: 50px; }
+    main .fotos-grid .galeria-grid div img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px; }
+  main .fotos-grid .galeria-grid .img-a {
+    grid-column: 1/3; }
+  main .fotos-grid .galeria-grid .img-b {
+    grid-column: 3/5; }
+  main .fotos-grid .galeria-grid .img-d {
+    grid-column: 2/4;
+    grid-row: 2/4; }
+  main .fotos-grid .galeria-grid .img-f {
+    grid-row: 3/5; }
+  main .fotos-grid .galeria-grid .img-g {
+    grid-row: 3/5; }
+
+main .fixed img {
+  /* Imagen de WHatsapp FLotante*/
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  /*Fija la posicion en la pagina*/
+  bottom: 30px;
+  right: 30px; }
+
+main .productos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  /* Espacio entre las celdas */
+  grid-gap: 30px;
+  /* Espacio entre las celdas */
+  margin: auto;
+  padding-bottom: 30px; }
+  main .productos .primer-banner {
+    grid-column: 1/6; }
+  main .productos .segundo-banner {
+    grid-column: 1/6; }
+  main .productos .tercer-banner {
+    grid-column: 1/6; }
+  main .productos .cuarto-banner {
+    grid-column: 1/6; }
+  main .productos h2 {
+    color: white;
+    font-family: truculenta;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black; }
+  main .productos .productos-contenedor {
+    height: auto;
+    width: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 15px; }
+    main .productos .productos-contenedor:hover {
+      scale: 1.2; }
+    main .productos .productos-contenedor div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .productos .productos-contenedor div img {
+        width: 150px;
+        height: 150px; }
+      main .productos .productos-contenedor div h3 {
+        width: 90%;
         height: 50px;
-        margin-left: 20px; }
+        color: black;
+        font-family: poppins;
+        font-weight: 600;
+        text-align: center;
+        font-size: 15px; }
+    main .productos .productos-contenedor div p {
+      text-align: center;
+      font-size: 19px;
+      font-weight: 600; }
+    main .productos .productos-contenedor div .seleccionar-cantidad {
+      display: flex; }
+    main .productos .productos-contenedor div a {
+      text-decoration: none;
+      margin-top: 1rem; }
+
+.titulo-promos h4 {
+  color: white;
+  font-family: truculenta;
+  font-size: 60px !important; }
+
+main {
+  background-image: none; }
+  main .frecuentes {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    main .frecuentes .frecuentes-desplega {
+      margin-left: 30px;
+      width: 800px; }
+      main .frecuentes .frecuentes-desplega h3 {
+        font-size: 25px;
+        margin: 30px 30px; }
+    main .frecuentes .frecuentes2 {
+      background-color: #2324255f; }
+      main .frecuentes .frecuentes2 h3 {
+        font-size: 25px;
+        margin: 30px 30px; }
+      main .frecuentes .frecuentes2 p {
+        padding: 20px;
+        font-size: 16px;
+        text-align: center; }
+      main .frecuentes .frecuentes2 img {
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 90%; }
 
 /*--VAN LAS MEDIA QUERYS SIEMPRE RESPETANDO LA ANIDACION QUE REALICENMOS EN EL DOCUMENTO DE COMPONENTES*/
