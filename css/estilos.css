@@ -147,17 +147,17 @@ footer {
 
 /*----*/
 .header-index {
+  padding-top: 160px;
   background-image: url(../img/prueba124fondo.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center; }
   .header-index .hero {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 104px);
-    position: relative; }
+    height: calc(100vh - 104px); }
     .header-index .hero .hero-titulo-boton {
       width: 80%;
       display: flex;
@@ -500,23 +500,25 @@ main {
         width: 90%; }
 
 @media screen and (max-width: 1245px) {
-  .header-index .hero {
-    justify-content: space-around; }
-    .header-index .hero .hero-titulo-boton {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-bottom: 10px; }
-    .header-index .hero .hero-imagenes {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 80px;
-      row-gap: 5px; }
-      .header-index .hero .hero-imagenes img {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 0px; }
+  .header-index {
+    padding-top: 100px; }
+    .header-index .hero {
+      justify-content: space-around; }
+      .header-index .hero .hero-titulo-boton {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 10px; }
+      .header-index .hero .hero-imagenes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 80px;
+        row-gap: 5px; }
+        .header-index .hero .hero-imagenes img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 0px; }
   main .nosotros h1 {
     font-size: 50px;
     margin: 0px 70px;

@@ -1,13 +1,13 @@
 .header-index {
+    padding-top: 160px;
     background-image: url(../img/prueba124fondo.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center ;
     .hero {
-        @include flex (flex, end, center);
+        @include flex (flex, center, center);
         flex-direction: column;
         height: calc(100vh - 104px);
-        position: relative;
         .hero-titulo-boton {
             width: 80%;
             @include flex (flex, space-evenly, flex-start);
