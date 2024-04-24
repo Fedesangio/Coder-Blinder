@@ -1,1 +1,302 @@
-/*--VAN LAS MEDIA QUERYS SIEMPRE RESPETANDO LA ANIDACION QUE REALICENMOS EN EL DOCUMENTO DE COMPONENTES*/
+@media screen and (max-width:1245px) {
+
+.header-index {
+    .hero {
+        justify-content: space-around;
+        .hero-titulo-boton {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 10px;
+    }
+        .hero-imagenes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 80px;
+            row-gap: 5px;
+                img {
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: 0px;
+        }
+    }
+}
+}
+main  {
+
+    .nosotros {
+        h1 {
+            font-size: 50px;
+            margin: 0px 70px;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            padding: 30px 100px;
+            margin: 0px 0px;
+        }
+}
+}
+
+.categorias {
+    margin-top: 30px;
+    margin: auto;
+div {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+}
+
+
+.bienvenidos {
+    div {
+        p {
+            font-size: 16px;
+
+            padding: 30px;
+        }
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+    .bienvenidos-segundo-contenedor {
+        flex-direction: row-reverse;
+        p {
+            font-size: 16px;
+            padding: 20px;
+        }
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
+
+footer section {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    .footer-h6{
+        margin: auto;
+    }
+}
+}
+
+
+@media screen and (max-width:750px) {
+
+    .header-index {
+        .hero {
+            .hero-imagenes {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, auto);
+                gap: 30px;
+                row-gap: 5px;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 0px;
+            }
+        }
+    }
+    }
+    .bienvenidos {
+        div {
+            height: auto;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .bienvenidos-segundo-contenedor {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+}
+}
+
+.hashtag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+footer {
+    section {
+    .imagen-footer {
+    .logo-footer{
+        margin-top: 10px;
+        width: 150px;
+        height: 100px;
+    }
+}
+    .footer-h6 {
+    h6{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 0px;
+    width: auto;
+    }
+}
+.footer-datos {
+    font-size: 16px;
+    text-align: center;
+}
+}
+}
+
+.fotos-grid{
+
+    align-items: flex-start;
+    min-height: 0;
+    .galeria-grid {
+        max-width: 80%;
+        grid-auto-rows: 100px;
+        grid-gap: 10px;
+        margin: 10px;
+        div {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+
+}
+
+@media screen and (max-width:600px) {
+
+
+    .fixed {
+        img {
+            /* Imagen de WHatsapp FLotante*/
+    width: 40px;
+    height: 40px;
+    position: fixed;
+/*Fija la posicion en la pagina*/
+    bottom: 30px;
+    right: 30px;
+
+        }
+}
+
+    .header-index {
+        .hero {
+            .hero-titulo-boton {
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                a {
+                    font-size: 30px; /* Tamaño de la fuente */
+                    padding: auto;
+                    height: auto;
+                }
+            }
+            .hero-imagenes {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, auto);
+                gap: 15px;
+                row-gap: 5px;
+                    img {
+                        width: 70px;
+                        height: 80px;
+                        margin-bottom: 0px;
+            }
+        }
+    }
+    }
+
+    main  {
+
+        .nosotros {
+            h1 {
+                font-size: 30px;
+                padding: 10px 0px;
+                margin: 0px;
+
+            }
+            p {
+                font-size: 16px;
+                padding: 10px 10px;
+                margin: 0px 0px;
+            }
+    }
+    }
+
+
+    
+
+    .bienvenidos {
+        padding: 0px;
+        div {
+            p {
+                font-size: 16px;
+                padding: 30px;
+            }
+            img {
+                width: 350px;
+                height: 300px;
+            }
+        }
+        .bienvenidos-segundo-contenedor {
+            p {
+                font-size: 16px;
+                padding: 20px;
+            }
+            img {
+                width: 350px;
+                height: 300px;
+            }
+        }
+    }
+
+
+}
+
+
+/*main {
+    .productos {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: auto;
+        padding-bottom: 30px;
+    .segundo-banner {
+        grid-column: 1/5;
+}
+
+    .tercer-banner {
+        grid-column: 1/5;
+}
+
+    .primer-banner {
+        grid-column: 1/5;
+}
+
+    .cuarto-banner {
+        grid-column: 1/5;
+    }
+}
+}*/

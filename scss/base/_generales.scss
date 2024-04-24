@@ -39,18 +39,18 @@
 
 .categorias-contenedor { /*propiedades contenedores*/
     border: 1px black solid;
+    width: 320px;
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 15px;
     display: flex;
-    justify-content: left;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .categorias p {
-    height: 80px;
+    height: 90px;
     text-align: center;
     padding-top: 10px;
     color: white;
@@ -63,28 +63,13 @@
 }
 
 .categorias a {
-    height: 400px;
+    height: 350px;
     text-decoration: none;
     color:aliceblue;
-    font-size: 49px;
+    font-size: 30px;
     margin: 15px;
     text-shadow: 8px 8px 16px rgb(0, 0, 0);
     text-align: center;
-}
-
-.bienvenidos p { /*texto dentro de los contenedores*/
-    font-family: truculenta;
-    font-size: 22px;
-    color: white;
-    font-weight: 500;
-    padding: 60px;
-    background-color: rgba(0, 0, 0, 0.652);
-    border-radius: 2px, solid, white;
-}
-
-.bienvenidos img {
-    width: 500px;
-    height: 400px;
 }
 
 .imagenes-redes {

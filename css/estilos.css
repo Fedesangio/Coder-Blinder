@@ -35,17 +35,17 @@
 .categorias-contenedor {
   /*propiedades contenedores*/
   border: 1px black solid;
+  width: 320px;
   height: 500px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 15px;
   display: flex;
-  justify-content: left;
   align-items: center;
   flex-direction: column;
   justify-content: space-between; }
 
 .categorias p {
-  height: 80px;
+  height: 90px;
   text-align: center;
   padding-top: 10px;
   color: white;
@@ -56,27 +56,13 @@
   border-bottom-right-radius: 15px; }
 
 .categorias a {
-  height: 400px;
+  height: 350px;
   text-decoration: none;
   color: aliceblue;
-  font-size: 49px;
+  font-size: 30px;
   margin: 15px;
   text-shadow: 8px 8px 16px black;
   text-align: center; }
-
-.bienvenidos p {
-  /*texto dentro de los contenedores*/
-  font-family: truculenta;
-  font-size: 22px;
-  color: white;
-  font-weight: 500;
-  padding: 60px;
-  background-color: rgba(0, 0, 0, 0.652);
-  border-radius: 2px, solid, white; }
-
-.bienvenidos img {
-  width: 500px;
-  height: 400px; }
 
 .imagenes-redes {
   width: 50px;
@@ -243,8 +229,9 @@ main .categorias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
+    row-gap: 50px;
     grid-auto-rows: auto;
-    align-items: center;
+    align-content: center;
     /* Espacio entre las celdas */ }
     main .categorias div .imagen-primer-contenedor {
       background-image: url(../img/productos/branca1.jpg);
@@ -267,35 +254,57 @@ main .categorias {
       main .categorias div .imagen-cuarto-contenedor:hover {
         scale: 1.1; }
 
-main .bienvenidos {
+.bienvenidos {
   margin-top: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column; }
-  main .bienvenidos div {
-    width: 80%;
+  .bienvenidos div {
+    height: auto;
     margin: auto;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px; }
-  main .bienvenidos .bienvenidos-segundo-contenedor {
+    align-items: center; }
+    .bienvenidos div p {
+      font-family: truculenta;
+      font-size: 22px;
+      color: white;
+      font-weight: 500;
+      padding: 90px;
+      background-color: rgba(0, 0, 0, 0.652);
+      border-radius: 2px, solid, white; }
+    .bienvenidos div img {
+      width: 500px;
+      height: 400px; }
+  .bienvenidos .bienvenidos-segundo-contenedor {
     flex-direction: row-reverse; }
+    .bienvenidos .bienvenidos-segundo-contenedor p {
+      font-family: truculenta;
+      font-size: 22px;
+      color: white;
+      font-weight: 500;
+      padding: 70px;
+      background-color: rgba(0, 0, 0, 0.652);
+      border-radius: 2px, solid, white; }
+    .bienvenidos .bienvenidos-segundo-contenedor img {
+      width: 500px;
+      height: 400px; }
 
-main .hashtag {
+.hashtag {
   display: flex;
   justify-content: center;
   align-items: center; }
-  main .hashtag img {
+  .hashtag img {
     width: 500px;
     height: 200px; }
 
-main .fotos-grid {
+.fotos-grid {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh; }
-  main .fotos-grid .galeria-grid {
+  .fotos-grid .galeria-grid {
     max-width: 70%;
     /*define el tamaño de la grilla*/
     display: grid;
@@ -304,24 +313,24 @@ main .fotos-grid {
     grid-gap: 10px;
     /* Espacio entre las celdas */
     margin: 50px; }
-    main .fotos-grid .galeria-grid div img {
+    .fotos-grid .galeria-grid div img {
       object-fit: cover;
       width: 100%;
       height: 100%;
       border-radius: 10px; }
-  main .fotos-grid .galeria-grid .img-a {
+  .fotos-grid .galeria-grid .img-a {
     grid-column: 1/3; }
-  main .fotos-grid .galeria-grid .img-b {
+  .fotos-grid .galeria-grid .img-b {
     grid-column: 3/5; }
-  main .fotos-grid .galeria-grid .img-d {
+  .fotos-grid .galeria-grid .img-d {
     grid-column: 2/4;
     grid-row: 2/4; }
-  main .fotos-grid .galeria-grid .img-f {
+  .fotos-grid .galeria-grid .img-f {
     grid-row: 3/5; }
-  main .fotos-grid .galeria-grid .img-g {
+  .fotos-grid .galeria-grid .img-g {
     grid-row: 3/5; }
 
-main .fixed img {
+.fixed img {
   /* Imagen de WHatsapp FLotante*/
   width: 60px;
   height: 60px;
@@ -393,6 +402,86 @@ main .productos {
   font-family: truculenta;
   font-size: 60px !important; }
 
+.carousel-item img {
+  max-height: 480px;
+  /* Ajusta el valor según la altura deseada */ }
+
+.pagina-contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-shadow: 2px 2px 4px black; }
+  .pagina-contacto .contacto-form {
+    width: 40%;
+    margin-bottom: 15px; }
+    .pagina-contacto .contacto-form .contacto h3 {
+      margin: 15px 0px 15px 10px;
+      font-size: 35px;
+      text-align: center;
+      font-family: poppins;
+      font-weight: 400;
+      color: white; }
+    .pagina-contacto .contacto-form .contacto div label {
+      margin: 15px 0px 15px 10px;
+      font-size: 1rem;
+      font-family: poppins;
+      font-weight: 400;
+      color: white; }
+    .pagina-contacto .contacto-form .contacto div input {
+      width: 90%;
+      padding-left: 10px;
+      height: 30px;
+      margin: 5px 0px 5px 5px;
+      font-size: 15px; }
+    .pagina-contacto .contacto-form .contacto div textarea {
+      width: 90%;
+      padding-left: 10px;
+      margin: 5px 0px 5px 5px;
+      font-size: 15px; }
+  .pagina-contacto .formulario-genero {
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .pagina-contacto .formulario-genero div {
+      margin: 10px;
+      margin-left: 16px; }
+
+.formulario-ciudad {
+  font-size: 1rem;
+  font-family: poppins;
+  font-weight: 400;
+  color: #232425; }
+
+.botones-consulta input {
+  text-decoration: none;
+  width: 138px;
+  height: 40px;
+  color: white;
+  background-color: #0e500e;
+  font-size: 19px;
+  margin: 10px;
+  /* Color de fondo */
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 10px;
+  /* Bordes redondeados */
+  padding: auto; }
+
+section div h3 {
+  margin: 15px 0px 15px 10px;
+  font-size: 35px;
+  text-align: center;
+  font-family: poppins;
+  font-weight: 400;
+  color: white; }
+
 main {
   background-image: none; }
   main .frecuentes {
@@ -420,4 +509,188 @@ main {
         margin-top: 20px;
         width: 90%; }
 
-/*--VAN LAS MEDIA QUERYS SIEMPRE RESPETANDO LA ANIDACION QUE REALICENMOS EN EL DOCUMENTO DE COMPONENTES*/
+@media screen and (max-width: 1245px) {
+  .header-index .hero {
+    justify-content: space-around; }
+    .header-index .hero .hero-titulo-boton {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 10px; }
+    .header-index .hero .hero-imagenes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 80px;
+      row-gap: 5px; }
+      .header-index .hero .hero-imagenes img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0px; }
+  main .nosotros h1 {
+    font-size: 50px;
+    margin: 0px 70px;
+    text-align: center; }
+  main .nosotros p {
+    font-size: 20px;
+    padding: 30px 100px;
+    margin: 0px 0px; }
+  .categorias {
+    margin-top: 30px;
+    margin: auto; }
+    .categorias div {
+      grid-template-columns: repeat(2, 1fr); }
+  .bienvenidos div p {
+    font-size: 16px;
+    padding: 30px; }
+  .bienvenidos div img {
+    width: 400px;
+    height: 300px; }
+  .bienvenidos .bienvenidos-segundo-contenedor {
+    flex-direction: row-reverse; }
+    .bienvenidos .bienvenidos-segundo-contenedor p {
+      font-size: 16px;
+      padding: 20px; }
+    .bienvenidos .bienvenidos-segundo-contenedor img {
+      width: 400px;
+      height: 300px; }
+  footer section {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto; }
+    footer section .footer-h6 {
+      margin: auto; } }
+
+@media screen and (max-width: 750px) {
+  .header-index .hero .hero-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    row-gap: 5px; }
+    .header-index .hero .hero-imagenes img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 0px; }
+  .bienvenidos div {
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+  .bienvenidos .bienvenidos-segundo-contenedor {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+  .hashtag {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .hashtag img {
+      width: 300px;
+      height: 150px; }
+  footer section .imagen-footer .logo-footer {
+    margin-top: 10px;
+    width: 150px;
+    height: 100px; }
+  footer section .footer-h6 h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 0px;
+    width: auto; }
+  footer section .footer-datos {
+    font-size: 16px;
+    text-align: center; }
+  .fotos-grid {
+    align-items: flex-start;
+    min-height: 0; }
+    .fotos-grid .galeria-grid {
+      max-width: 80%;
+      grid-auto-rows: 100px;
+      grid-gap: 10px;
+      margin: 10px; }
+      .fotos-grid .galeria-grid div img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px; } }
+
+@media screen and (max-width: 600px) {
+  .fixed img {
+    /* Imagen de WHatsapp FLotante*/
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    /*Fija la posicion en la pagina*/
+    bottom: 30px;
+    right: 30px; }
+  .header-index .hero .hero-titulo-boton h3 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .header-index .hero .hero-titulo-boton a {
+    font-size: 30px;
+    /* Tamaño de la fuente */
+    padding: auto;
+    height: auto; }
+  .header-index .hero .hero-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    row-gap: 5px; }
+    .header-index .hero .hero-imagenes img {
+      width: 70px;
+      height: 80px;
+      margin-bottom: 0px; }
+  main .nosotros h1 {
+    font-size: 30px;
+    padding: 10px 0px;
+    margin: 0px; }
+  main .nosotros p {
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 0px 0px; }
+  .bienvenidos {
+    padding: 0px; }
+    .bienvenidos div p {
+      font-size: 16px;
+      padding: 30px; }
+    .bienvenidos div img {
+      width: 350px;
+      height: 300px; }
+    .bienvenidos .bienvenidos-segundo-contenedor p {
+      font-size: 16px;
+      padding: 20px; }
+    .bienvenidos .bienvenidos-segundo-contenedor img {
+      width: 350px;
+      height: 300px; } }
+
+/*main {
+    .productos {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: auto;
+        padding-bottom: 30px;
+    .segundo-banner {
+        grid-column: 1/5;
+}
+
+    .tercer-banner {
+        grid-column: 1/5;
+}
+
+    .primer-banner {
+        grid-column: 1/5;
+}
+
+    .cuarto-banner {
+        grid-column: 1/5;
+    }
+}
+}*/

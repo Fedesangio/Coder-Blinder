@@ -25,7 +25,6 @@
                     font-weight: bold;
                     text-shadow: 8px 8px 16px black;
                     margin-bottom: 30px;
-
             }
                 a {
                     background-color: #ffffff8b; /* Color de fondo */
@@ -53,6 +52,7 @@
 }
 }
 main  {
+
     .nosotros {
         h1 {
             font-size: 80px;
@@ -82,8 +82,9 @@ main  {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 10px;
+            row-gap: 50px;
             grid-auto-rows: auto;
-            align-items: center;            /* Espacio entre las celdas */
+            align-content: center;            /* Espacio entre las celdas */
             .imagen-primer-contenedor{
                 background-image: url(../img/productos/branca1.jpg);
                 background-position: center;
@@ -115,23 +116,54 @@ main  {
             }
         }
     }
+
+
+    }
     .bienvenidos {
         margin-top: 20px;
         padding: 20px;
         display: flex;
         flex-direction: column;
         div {
-            width: 80%;
+            height: auto;
             margin: auto;
+            margin-top: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 30px;
+            p {
+                font-family: truculenta;
+                font-size: 22px;
+                color: white;
+                font-weight: 500;
+                padding: 90px;
+                background-color: rgba(0, 0, 0, 0.652);
+                border-radius: 2px, solid, white;
+            }
+            img {
+                width: 500px;
+                height: 400px;
+            }
         }
         .bienvenidos-segundo-contenedor {
             flex-direction: row-reverse;
+            p {
+                font-family: truculenta;
+                font-size: 22px;
+                color: white;
+                font-weight: 500;
+                padding: 70px;
+                background-color: rgba(0, 0, 0, 0.652);
+                border-radius: 2px, solid, white;
+            }
+            img {
+                width: 500px;
+                height: 400px;
+            }
         }
     }
+
+
 
     .hashtag {
         display: flex;
@@ -196,7 +228,7 @@ main  {
 
         }
 }
-}
+
 
 
 
