@@ -84,9 +84,39 @@ footer section {
         margin: auto;
     }
 }
+
+
+/**------------------------------------------------------PRODUCTOS*/
+main {
+    .productos {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .primer-banner {
+            grid-column: 1/5;
+        }
+        .segundo-banner {
+            grid-column: 1/5;
+        }
+        .tercer-banner {
+            grid-column: 1/5;
+        }
+        .cuarto-banner {
+            grid-column: 1/5;
+        }
+}
 }
 
+/*------------------------------------------------PAGINA FORMULARIO*/
+.pagina-contacto {
+    .contacto-form {
+        width: 80%;
+        margin-bottom: 15px;
 
+}
+}
+}
 @media screen and (max-width:750px) {
 
     .header-index {
@@ -135,6 +165,26 @@ footer section {
     }
 }
 
+.fotos-grid{
+
+    align-items: flex-start;
+    min-height: 0;
+    .galeria-grid {
+        max-width: 80%;
+        grid-auto-rows: 100px;
+        grid-gap: 10px;
+        margin: 10px;
+        div {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
 footer {
     section {
     .imagen-footer {
@@ -159,28 +209,36 @@ footer {
 }
 }
 
-.fotos-grid{
 
-    align-items: flex-start;
-    min-height: 0;
-    .galeria-grid {
-        max-width: 80%;
-        grid-auto-rows: 100px;
-        grid-gap: 10px;
-        margin: 10px;
-        div {
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-            }
+/**------------------------------------------------------PRODUCTOS*/
+main {
+    .productos {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .primer-banner {
+            grid-column: 1/4;
         }
-    }
-
+        .segundo-banner {
+            grid-column: 1/4;
+        }
+        .tercer-banner {
+            grid-column: 1/4;
+        }
+        .cuarto-banner {
+            grid-column: 1/4;
+        }
+        .productos-contenedor {
+                div {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+        }
 }
-
-
+}
 }
 
 @media screen and (max-width:600px) {
@@ -199,6 +257,16 @@ footer {
         }
 }
 
+.boton-comprar {
+    padding: 5px 25px 5px 25px;
+}
+
+/*--------------------------------------------------------------------------PROMOS*/
+.carousel-item img {
+    height: 200px!important; /* Ajusta el valor según la altura deseada */
+}
+
+/*--------------------------------------------------------------------------INDEX*/
     .header-index {
         .hero {
             .hero-titulo-boton {
@@ -244,9 +312,6 @@ footer {
     }
     }
 
-
-    
-
     .bienvenidos {
         padding: 0px;
         div {
@@ -255,7 +320,7 @@ footer {
                 padding: 30px;
             }
             img {
-                width: 350px;
+                width: 300px;
                 height: 300px;
             }
         }
@@ -265,38 +330,123 @@ footer {
                 padding: 20px;
             }
             img {
-                width: 350px;
+                width: 300px;
                 height: 300px;
             }
         }
     }
-
-
-}
-
-
-/*main {
-    .productos {
-        width: 80%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        margin: auto;
-        padding-bottom: 30px;
-    .segundo-banner {
-        grid-column: 1/5;
-}
-
-    .tercer-banner {
-        grid-column: 1/5;
-}
-
-    .primer-banner {
-        grid-column: 1/5;
-}
-
-    .cuarto-banner {
-        grid-column: 1/5;
+    footer {
+        section {
+        .imagen-footer {
+        .logo-footer{
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+        }
     }
+        .footer-h6 {
+        h6{
+            padding-top: 15px;
+        font-size: 14px;
+        width: 150px;
+        }
+    }
+    .footer-datos {
+        font-size: 14px;
+        text-align: center;
+    }
+    .footer-datos {
+        div {
+            h5 {
+                margin: 20px 0px;
+            }
+            p {
+                font-size: 12px;
+                margin: 10px 0px;
+            }
+        }
+        div {
+            a {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    }
+    }
+
+    /**------------------------------------------------------PRODUCTOS*/
+main {
+    .productos {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .primer-banner {
+            grid-column: 1/3;
+        }
+        .segundo-banner {
+            grid-column: 1/3;
+        }
+        .tercer-banner {
+            grid-column: 1/3;
+        }
+        .cuarto-banner {
+            grid-column: 1/3;
+        }
+
 }
-}*/
+}
+/*---------------------------------------------------PREGUNTAS FRECUENTES*/
+main {
+    background-image: none;
+    .frecuentes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .frecuentes-desplega {
+            margin-left: 30px;
+            width: 90%;
+            h3 {
+                font-size: 25px;
+                margin: 30px 30px;
+            }
+        }
+        .frecuentes2 {
+            background-color: #2324255f;
+            h3 {
+                font-size: 25px;
+                margin: 30px 30px;
+            }
+            p {
+
+                padding: 20px;
+                font-size: 16px;
+                text-align: center;
+            }
+            img {
+                margin-left: 30px;
+                margin-top: 20px;
+                width: 90%;
+            }
+        }
+}
+}
+
+.pagina-contacto {
+    .contacto-form {
+        width: 90%;
+        margin-bottom: 15px;
+
+}
+}
+
+}
+
+

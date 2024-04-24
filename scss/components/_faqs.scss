@@ -1,17 +1,13 @@
 main {
     background-image: none;
     .frecuentes {
-        height: 500px;
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        align-items: center;
+
         .frecuentes-desplega {
             margin-left: 30px;
-            width: 800px;
-            h3 {
-                font-size: 25px;
-                margin: 30px 30px;
-            }
+            width: 90%;
         }
         .frecuentes2 {
             background-color: #2324255f;
