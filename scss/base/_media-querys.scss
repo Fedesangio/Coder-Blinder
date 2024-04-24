@@ -38,16 +38,17 @@ main  {
         }
 }
 }
-
+main{
 .categorias {
-    margin-top: 30px;
-    margin: auto;
-div {
+.categorias-item{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 }
-
+}
 
 .bienvenidos {
     div {
@@ -311,6 +312,18 @@ main {
             }
     }
     }
+
+    main{
+        .categorias {
+        .categorias-item{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        }
+        }
 
     .bienvenidos {
         padding: 0px;

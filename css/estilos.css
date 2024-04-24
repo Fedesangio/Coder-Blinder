@@ -156,7 +156,8 @@ footer {
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 104px); }
+    height: calc(100vh - 104px);
+    position: relative; }
     .header-index .hero .hero-titulo-boton {
       width: 80%;
       display: flex;
@@ -524,11 +525,12 @@ main {
     font-size: 20px;
     padding: 30px 100px;
     margin: 0px 0px; }
-  .categorias {
-    margin-top: 30px;
-    margin: auto; }
-    .categorias div {
-      grid-template-columns: repeat(2, 1fr); }
+  main .categorias .categorias-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
   .bienvenidos div p {
     font-size: 16px;
     padding: 30px; }
@@ -683,6 +685,12 @@ main {
     font-size: 16px;
     padding: 10px 10px;
     margin: 0px 0px; }
+  main .categorias .categorias-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
   .bienvenidos {
     padding: 0px; }
     .bienvenidos div p {

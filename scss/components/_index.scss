@@ -7,6 +7,7 @@
         @include flex (flex, end, center);
         flex-direction: column;
         height: calc(100vh - 104px);
+        position: relative;
         .hero-titulo-boton {
             width: 80%;
             @include flex (flex, space-evenly, flex-start);
