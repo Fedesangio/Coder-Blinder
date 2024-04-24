@@ -4,33 +4,28 @@
     background-size: cover;
     background-position: center ;
     .hero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, end, center);
         flex-direction: column;
-        justify-content: end;
         height: calc(100vh - 104px);
         .hero-titulo-boton {
             width: 80%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: flex-start;
+            @include flex (flex, space-evenly, flex-start);
             flex-direction: column;
             flex-wrap: wrap;
             margin-bottom: 90px;
                 h3 {
                     font-size: 30px;
-                    color: white;
+                    color: $color-secundario;
                     font-family: truculenta;
                     font-weight: bold;
-                    text-shadow: 8px 8px 16px black;
+                    text-shadow: 8px 8px 16px $color-principal;
                     margin-bottom: 30px;
             }
                 a {
                     background-color: #ffffff8b; /* Color de fondo */
                     /*border: 4px solid #e79406aa; /* Borde*/
                     color: green; /* Color del texto */
-                    text-shadow: 1px 1px 2px black;
+                    text-shadow: 1px 1px 2px $color-principal;
                     text-align: center; /* Alineación del texto */
                     text-decoration: none; /* Sin   subrayado */
                     font-size: 60px; /* Tamaño de la fuente */
@@ -56,9 +51,9 @@ main  {
     .nosotros {
         h1 {
             font-size: 80px;
-            color: white;
+            color: $color-secundario;
             font-family: truculenta;
-            text-shadow: 8px 8px 16px black;
+            text-shadow: 8px 8px 16px $color-principal;
             margin: 0 100px;
             text-align: center;
             height: auto;
@@ -66,12 +61,12 @@ main  {
         }
         p {
             font-size: 30px;
-            color: white;
+            color: $color-secundario;
             background-color: rgba(14, 80, 14, 0.447);
             padding: 50px 200px;
             text-align: center;
             font-family: truculenta;
-            text-shadow: 8px 8px 16px black;
+            text-shadow: 8px 8px 16px $color-principal;
         }
 }
     .categorias {
@@ -128,17 +123,15 @@ main  {
             height: auto;
             margin: auto;
             margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center);
             p {
                 font-family: truculenta;
                 font-size: 22px;
-                color: white;
+                color: $color-secundario;
                 font-weight: 500;
                 padding: 90px;
                 background-color: rgba(0, 0, 0, 0.652);
-                border-radius: 2px, solid, white;
+                border-radius: 2px, solid, $color-secundario;
             }
             img {
                 width: 500px;
@@ -146,15 +139,16 @@ main  {
             }
         }
         .bienvenidos-segundo-contenedor {
+            display: flex;
             flex-direction: row-reverse;
             p {
                 font-family: truculenta;
                 font-size: 22px;
-                color: white;
+                color: $color-secundario;
                 font-weight: 500;
                 padding: 70px;
                 background-color: rgba(0, 0, 0, 0.652);
-                border-radius: 2px, solid, white;
+                border-radius: 2px, solid, $color-secundario;
             }
             img {
                 width: 500px;
@@ -166,9 +160,7 @@ main  {
 
 
     .hashtag {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex ( flex, center, center);
         img {
             width: 500px;
             height: 200px;
@@ -176,9 +168,7 @@ main  {
     }
 
     .fotos-grid{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex ( flex, center, center);
         min-height: 100vh;
         .galeria-grid {
             max-width: 70%;

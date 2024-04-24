@@ -1,9 +1,7 @@
 .pagina-contacto {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    @include flex ( flex, space-evenly, flex-start);
     flex-wrap: wrap;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px $color-principal;
     .contacto-form {
         width: 40%;
         margin-bottom: 15px;
@@ -14,7 +12,7 @@
                 text-align: center;
                 font-family: poppins;
                 font-weight: 400;
-                color: white;
+                color: $color-secundario;
             }
             div {
                 label {
@@ -22,7 +20,7 @@
                 font-size: 1rem;
                 font-family: poppins;
                 font-weight: 400;
-                color: white;
+                color: $color-secundario;
                 }
                 input {
                 width: 90%;
@@ -46,12 +44,10 @@
             font-size: 1rem;
             font-family: poppins;
             font-weight: 400;
-            color: white;
-            text-shadow: 2px 2px 4px black;
-            display: flex;
+            color: $color-secundario;
+            text-shadow: 2px 2px 4px $color-principal;
+            @include flex ( flex, space-around, center);
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
             div {
                 margin: 10px;
                 margin-left: 16px;
@@ -74,7 +70,7 @@
                 font-size: 19px;
                 margin: 10px;
                 /* Color de fondo */
-                border: 2px solid black;
+                border: 2px solid $color-principal;
                 text-align: center;
                 border-radius: 10px;
                 /* Bordes redondeados */
@@ -90,7 +86,7 @@
                     text-align: center;
                     font-family: poppins;
                     font-weight: 400;
-                    color: white;                    
+                    color: $color-secundario;                    
                 }
             }
             }

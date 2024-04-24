@@ -6,8 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /*HACE QUE LOS ELEMENTOS MIDAN LO QUE TIENEN QUE MEDIR*/ }
+  box-sizing: border-box; }
 
 /*fondo main*/
 .background-main {
@@ -24,7 +23,7 @@
 
 /*-FONDO NEGRO NAV-*/
 .barra-nav {
-  background-color: rgba(0, 0, 0, 0.592); }
+  background-color: rgba(0, 0, 0, 0.592) !important; }
 
 .sin-sombra a {
   text-shadow: none; }
@@ -33,16 +32,15 @@
   color: black !important; }
 
 .categorias-contenedor {
-  /*propiedades contenedores*/
   border: 1px black solid;
   width: 320px;
   height: 500px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 15px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
 
 .categorias p {
   height: 90px;
@@ -58,7 +56,7 @@
 .categorias a {
   height: 350px;
   text-decoration: none;
-  color: aliceblue;
+  color: white;
   font-size: 30px;
   margin: 15px;
   text-shadow: 8px 8px 16px black;
@@ -69,25 +67,17 @@
   height: 50px;
   margin-left: 20px; }
 
-/*PAGINA DE PRODUCTOS*/
 .productos-nav-bar {
   background-image: url(../img/fondo.jpg); }
 
 .boton-comprar {
   background-color: #690507fc;
-  /* Color de fondo */
   border: 2px solid black;
-  /* Borde*/
   color: white !important;
-  /* Color del texto */
   text-align: center;
-  /* Alineación del texto */
   text-decoration: none;
-  /* Sin   subrayado */
   font-size: 16px;
-  /* Tamaño de la fuente */
   border-radius: 10px;
-  /* Bordes redondeados */
   padding: 5px 40px 5px 40px;
   margin-bottom: 5px; }
 
@@ -122,7 +112,6 @@ footer {
       flex-direction: column; }
       footer section .footer-nav ul {
         list-style: none;
-        /*Saca la viñeta de la lista*/
         text-align: center; }
         footer section .footer-nav ul li {
           margin-top: 20px; }
@@ -136,9 +125,9 @@ footer {
       font-size: 19px;
       font-family: truculenta;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       text-align: left; }
       footer section .footer-datos div h5 {
         margin: 30px 0px;
@@ -158,10 +147,9 @@ footer {
   background-position: center; }
   .header-index .hero {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-direction: column;
-    justify-content: end;
     height: calc(100vh - 104px); }
     .header-index .hero .hero-titulo-boton {
       width: 80%;
@@ -278,6 +266,7 @@ main .categorias {
       width: 500px;
       height: 400px; }
   .bienvenidos .bienvenidos-segundo-contenedor {
+    display: flex;
     flex-direction: row-reverse; }
     .bienvenidos .bienvenidos-segundo-contenedor p {
       font-family: truculenta;
@@ -373,9 +362,9 @@ main .productos {
       scale: 1.2; }
     main .productos .productos-contenedor div {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: center; }
+      flex-direction: column; }
       main .productos .productos-contenedor div img {
         width: 150px;
         height: 150px; }
@@ -446,9 +435,9 @@ main .productos {
     color: white;
     text-shadow: 2px 2px 4px black;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     .pagina-contacto .formulario-genero div {
       margin: 10px;
       margin-left: 16px; }
@@ -764,6 +753,7 @@ main {
           margin-left: 30px;
           margin-top: 20px;
           width: 90%; }
+  /*-------------------------------------------------------PAGINA FORMULARIO*/
   .pagina-contacto .contacto-form {
     width: 90%;
     margin-bottom: 15px; } }

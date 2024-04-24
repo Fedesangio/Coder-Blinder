@@ -9,7 +9,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*HACE QUE LOS ELEMENTOS MIDAN LO QUE TIENEN QUE MEDIR*/
+}
+
+
+$color-principal: black;
+$color-secundario:white;
+$color-terceario: #690507fc;
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
 }
 
 /*fondo main*/
@@ -19,44 +29,42 @@
 /**--------NAV BOOTS*/
 .barra-nav a {
     text-decoration: none!important;
-    color: white!important;
+    color: $color-secundario!important;
     font-size: 1.4rem;
     font-family: truculenta!important;
-    text-shadow: 8px 4px 8px black;
+    text-shadow: 8px 4px 8px $color-principal;
     margin: 0 20px;
 }
 
 /*-FONDO NEGRO NAV-*/
 .barra-nav {
-    background-color: rgba(0, 0, 0, 0.592);
+    background-color: rgba(0, 0, 0, 0.592)!important;
 }
 .sin-sombra a {
     text-shadow: none;
 }
 .dropdown-menu li a {
-    color: black!important
+    color: $color-principal!important
 }
 
-.categorias-contenedor { /*propiedades contenedores*/
-    border: 1px black solid;
+.categorias-contenedor { 
+    border: 1px $color-principal solid;
     width: 320px;
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 15px;
-    display: flex;
-    align-items: center;
+    @include flex ( flex, space-between, center);
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .categorias p {
     height: 90px;
     text-align: center;
     padding-top: 10px;
-    color: white;
+    color: $color-secundario;
     font-family: poppins;
     font-size: 13px;
-    background-color: black;
+    background-color: $color-principal;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
@@ -65,7 +73,7 @@
 .categorias a {
     height: 350px;
     text-decoration: none;
-    color:aliceblue;
+    color:$color-secundario;
     font-size: 30px;
     margin: 15px;
     text-shadow: 8px 8px 16px rgb(0, 0, 0);
@@ -78,27 +86,18 @@
     margin-left: 20px;
 }
 
-/*PAGINA DE PRODUCTOS*/
-
 .productos-nav-bar {
     background-image: url(../img/fondo.jpg);
 }
 
 .boton-comprar {
-    background-color: #690507fc;
-    /* Color de fondo */
-    border: 2px solid black;
-    /* Borde*/
-    color: white!important;
-    /* Color del texto */
+    background-color: $color-terceario;
+    border: 2px solid $color-principal;
+    color: $color-secundario!important;
     text-align: center;
-    /* Alineación del texto */
     text-decoration: none;
-    /* Sin   subrayado */
     font-size: 16px;
-    /* Tamaño de la fuente */
     border-radius: 10px;
-    /* Bordes redondeados */
     padding: 5px 40px 5px 40px;
     margin-bottom: 5px;
 }
@@ -123,7 +122,7 @@ grid-auto-rows: auto;
 }
 .footer-h6 {
     h6 {
-        color: white;
+        color: $color-secundario;
         text-align: center;
         font-size: 22px;
         font-family: truculenta;
@@ -134,19 +133,16 @@ grid-auto-rows: auto;
     }
 }
 .footer-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex ( flex, center, center);
     flex-direction: column;
     ul {
         list-style: none;
-        /*Saca la viñeta de la lista*/
         text-align: center;
         li {
             margin-top: 20px;
             a {
                 text-decoration: none;
-                color: white;
+                color: $color-secundario;
                 font-size: 20px;
                 font-family: truculenta;
             }
@@ -154,13 +150,11 @@ grid-auto-rows: auto;
     }
 }
 .footer-datos {
-    color: white;
+    color: $color-secundario;
     font-size: 19px;
     font-family: truculenta;
-    display: flex;
+    @include flex ( flex, center, center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: left;
     div {
         h5 {

@@ -1,10 +1,7 @@
 main {
     background-image: none;
     .frecuentes {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+        @include flex ( flex, space-between, center);
         .frecuentes-desplega {
             margin-left: 30px;
             width: 90%;
