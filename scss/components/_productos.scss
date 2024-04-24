@@ -36,11 +36,11 @@ main {
             border-radius: 15px;
             &:hover {
                 scale: 1.2;
+                transition-duration: 0,5s;
             }
 
                 div {
-                    @include flex ( flex, center, center);
-                    flex-direction: column;
+                    @extend %flex-center;
                     img {
                         width: 150px;
                         height: 150px;

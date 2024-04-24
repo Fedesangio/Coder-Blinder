@@ -8,6 +8,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+.bienvenidos, main .productos .productos-contenedor div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
 /*fondo main*/
 .background-main {
   background-image: url(../img/maderacuadraditos.jpg); }
@@ -59,7 +65,7 @@
   color: white;
   font-size: 30px;
   margin: 15px;
-  text-shadow: 8px 8px 16px black;
+  text-shadow: 4px 4px 8px black;
   text-align: center; }
 
 .imagenes-redes {
@@ -225,28 +231,30 @@ main .categorias {
       background-image: url(../img/productos/branca1.jpg);
       background-position: center; }
       main .categorias div .imagen-primer-contenedor:hover {
-        scale: 1.1; }
+        scale: 1.1;
+        transition-duration: 1s; }
     main .categorias div .imagen-segundo-contenedor {
       background-image: url(../img/productos/tanqueray1.jpg);
       background-position: center; }
       main .categorias div .imagen-segundo-contenedor:hover {
-        scale: 1.1; }
+        scale: 1.1;
+        transition-duration: 1s; }
     main .categorias div .imagen-tercer-contenedor {
       background-image: url(../img/productos/jagermaister1.jpg);
       background-position: center; }
       main .categorias div .imagen-tercer-contenedor:hover {
-        scale: 1.1; }
+        scale: 1.1;
+        transition-duration: 1s; }
     main .categorias div .imagen-cuarto-contenedor {
       background-image: url(../img/productos/bluelabel1.jpg);
       background-size: cover; }
       main .categorias div .imagen-cuarto-contenedor:hover {
-        scale: 1.1; }
+        scale: 1.1;
+        transition-duration: 1s; }
 
 .bienvenidos {
   margin-top: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column; }
+  padding: 20px; }
   .bienvenidos div {
     height: auto;
     margin: auto;
@@ -359,23 +367,19 @@ main .productos {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 15px; }
     main .productos .productos-contenedor:hover {
-      scale: 1.2; }
-    main .productos .productos-contenedor div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
-      main .productos .productos-contenedor div img {
-        width: 150px;
-        height: 150px; }
-      main .productos .productos-contenedor div h3 {
-        width: 90%;
-        height: 50px;
-        color: black;
-        font-family: poppins;
-        font-weight: 600;
-        text-align: center;
-        font-size: 15px; }
+      scale: 1.2;
+      transition-duration: 0,5s; }
+    main .productos .productos-contenedor div img {
+      width: 150px;
+      height: 150px; }
+    main .productos .productos-contenedor div h3 {
+      width: 90%;
+      height: 50px;
+      color: black;
+      font-family: poppins;
+      font-weight: 600;
+      text-align: center;
+      font-size: 15px; }
     main .productos .productos-contenedor div p {
       text-align: center;
       font-size: 19px;

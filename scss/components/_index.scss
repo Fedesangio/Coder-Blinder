@@ -86,6 +86,7 @@ main  {
 
                 &:hover {
                     scale: 1.1;
+                    transition-duration: 1s;
                 }
             }
             .imagen-segundo-contenedor{
@@ -93,6 +94,7 @@ main  {
                 background-position: center;
                 &:hover {
                     scale: 1.1;
+                    transition-duration: 1s;
                 }
             }
             .imagen-tercer-contenedor{
@@ -100,6 +102,7 @@ main  {
                 background-position: center;
                 &:hover {
                     scale: 1.1;
+                    transition-duration: 1s;
                 }
             }
             .imagen-cuarto-contenedor{
@@ -107,6 +110,7 @@ main  {
                 background-size: cover;
                 &:hover {
                     scale: 1.1;
+                    transition-duration: 1s;
                 }
             }
         }
@@ -117,8 +121,7 @@ main  {
     .bienvenidos {
         margin-top: 20px;
         padding: 20px;
-        display: flex;
-        flex-direction: column;
+        @extend %flex-center;
         div {
             height: auto;
             margin: auto;

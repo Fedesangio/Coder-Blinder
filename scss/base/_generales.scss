@@ -16,6 +16,19 @@ $color-principal: black;
 $color-secundario:white;
 $color-terceario: #690507fc;
 
+$fuentes:
+13px,
+18px,
+20px,
+30px;
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @mixin flex ($flex, $justify, $align){
     display: $flex;
     justify-content: $justify;
@@ -74,9 +87,9 @@ $color-terceario: #690507fc;
     height: 350px;
     text-decoration: none;
     color:$color-secundario;
-    font-size: 30px;
+    font-size: nth($fuentes, 4);
     margin: 15px;
-    text-shadow: 8px 8px 16px rgb(0, 0, 0);
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
     text-align: center;
 }
 
