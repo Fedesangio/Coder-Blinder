@@ -8,12 +8,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*variables*/
+/*listas*/
+/*mapas*/
 .bienvenidos, main .productos .productos-contenedor div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
 
+/*mixin*/
 /*fondo main*/
 .background-main {
   background-image: url(../img/maderacuadraditos.jpg); }
@@ -31,11 +35,13 @@
 .barra-nav {
   background-color: rgba(0, 0, 0, 0.592) !important; }
 
-.sin-sombra a {
-  text-shadow: none; }
+.sin-sombra {
+  background-color: rgba(0, 0, 0, 0.778) !important; }
+  .sin-sombra a {
+    text-shadow: none; }
 
 .dropdown-menu li a {
-  color: black !important; }
+  color: white !important; }
 
 .categorias-contenedor {
   border: 1px black solid;

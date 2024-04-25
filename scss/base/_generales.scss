@@ -11,24 +11,24 @@
     box-sizing: border-box;
 }
 
-
+/*variables*/
 $color-principal: black;
 $color-secundario:white;
 $color-terceario: #690507fc;
-
+/*listas*/
 $fuentes:
 13px,
 18px,
 20px,
 30px;
-
+/*mapas*/
 %flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
+/*mixin*/
 @mixin flex ($flex, $justify, $align){
     display: $flex;
     justify-content: $justify;
@@ -53,11 +53,14 @@ $fuentes:
 .barra-nav {
     background-color: rgba(0, 0, 0, 0.592)!important;
 }
-.sin-sombra a {
+.sin-sombra {
+    background-color: rgba(0, 0, 0, 0.778)!important;
+    a {
     text-shadow: none;
 }
+}
 .dropdown-menu li a {
-    color: $color-principal!important
+    color: $color-secundario!important;
 }
 
 .categorias-contenedor { 
