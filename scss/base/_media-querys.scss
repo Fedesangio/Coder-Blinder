@@ -135,6 +135,17 @@ main {
                         margin-bottom: 0px;
             }
         }
+        .hero-titulo-boton {
+            a {
+                font-size: 60px; /* Tamaño de la fuente */
+                border-radius: 10px; /* Bordes redondeados */
+                padding: 10px 50px 10px 50px;
+                height: 100px;
+                font-family: truculenta;
+                font-style: inherit;
+                font-weight: bold;
+            }
+        }
     }
     }
     .bienvenidos {
@@ -273,13 +284,14 @@ main {
         .hero {
             .hero-titulo-boton {
                 h3 {
-                    font-size: 20px;
-                    margin-bottom: 10px;
+                    font-size: 25px;
+                    margin-bottom: 30px;
                 }
                 a {
                     font-size: 30px; /* Tamaño de la fuente */
-                    padding: auto;
+                    padding: 10px 30px 10px 30px;
                     height: auto;
+
                 }
             }
             .hero-imagenes {
