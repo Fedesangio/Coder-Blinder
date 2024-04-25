@@ -253,7 +253,7 @@ main {
 }
 }
 }
-
+/*--------------------------------------------------------------------------------------------------600*/
 @media screen and (max-width:600px) {
 
 
@@ -285,11 +285,13 @@ main {
             .hero-titulo-boton {
                 h3 {
                     font-size: 25px;
-                    margin-bottom: 30px;
+                    margin-bottom: 40px;
+                    text-align: center;
                 }
                 a {
-                    font-size: 30px; /* Tamaño de la fuente */
-                    padding: 10px 30px 10px 30px;
+                    padding-top: 80px;
+                    font-size: 40px; /* Tamaño de la fuente */
+                    padding: 10px 20px 10px 20px;
                     height: auto;
 
                 }
@@ -314,7 +316,7 @@ main {
         .nosotros {
             h1 {
                 font-size: 30px;
-                padding: 10px 0px;
+                padding: 20px 0px;
                 margin: 0px;
 
             }

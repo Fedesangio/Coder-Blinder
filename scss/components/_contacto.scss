@@ -10,7 +10,7 @@
                 margin: 15px 0px 15px 10px;
                 font-size: 35px;
                 text-align: center;
-                font-family: poppins;
+                font-family: truculenta;
                 font-weight: 400;
                 color: $color-secundario;
             }
@@ -75,19 +75,17 @@
                 border-radius: 10px;
                 /* Bordes redondeados */
                 padding: auto;
-
             }            
         }
-        section {
-            div {
+        .formulario-mapa {
+            div{
                 h3 {
                     margin: 15px 0px 15px 10px;
                     font-size: 35px;
                     text-align: center;
-                    font-family: poppins;
+                    font-family: truculenta;
                     font-weight: 400;
                     color: $color-secundario;                    
                 }
             }
             }
-

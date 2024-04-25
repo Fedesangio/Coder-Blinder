@@ -209,7 +209,7 @@ main .nosotros h1 {
   color: white;
   font-family: truculenta;
   text-shadow: 8px 8px 16px black;
-  margin: 0 100px;
+  padding: 20px 80px;
   text-align: center;
   height: auto; }
 
@@ -375,7 +375,7 @@ main .productos {
     border-radius: 15px; }
     main .productos .productos-contenedor:hover {
       scale: 1.2;
-      transition-duration: 0,5s; }
+      transition-duration: 1s; }
     main .productos .productos-contenedor div img {
       width: 150px;
       height: 150px; }
@@ -419,7 +419,7 @@ main .productos {
       margin: 15px 0px 15px 10px;
       font-size: 35px;
       text-align: center;
-      font-family: poppins;
+      font-family: truculenta;
       font-weight: 400;
       color: white; }
     .pagina-contacto .contacto-form .contacto div label {
@@ -474,11 +474,11 @@ main .productos {
   /* Bordes redondeados */
   padding: auto; }
 
-section div h3 {
+.formulario-mapa div h3 {
   margin: 15px 0px 15px 10px;
   font-size: 35px;
   text-align: center;
-  font-family: poppins;
+  font-family: truculenta;
   font-weight: 400;
   color: white; }
 
@@ -661,6 +661,7 @@ main {
       width: 100px;
       height: 100px; } }
 
+/*--------------------------------------------------------------------------------------------------600*/
 @media screen and (max-width: 600px) {
   .fixed img {
     /* Imagen de WHatsapp FLotante*/
@@ -679,11 +680,13 @@ main {
   /*--------------------------------------------------------------------------INDEX*/
   .header-index .hero .hero-titulo-boton h3 {
     font-size: 25px;
-    margin-bottom: 30px; }
+    margin-bottom: 40px;
+    text-align: center; }
   .header-index .hero .hero-titulo-boton a {
-    font-size: 30px;
+    padding-top: 80px;
+    font-size: 40px;
     /* Tamaño de la fuente */
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 20px;
     height: auto; }
   .header-index .hero .hero-imagenes {
     display: grid;
@@ -697,7 +700,7 @@ main {
       margin-bottom: 0px; }
   main .nosotros h1 {
     font-size: 30px;
-    padding: 10px 0px;
+    padding: 20px 0px;
     margin: 0px; }
   main .nosotros p {
     font-size: 16px;
