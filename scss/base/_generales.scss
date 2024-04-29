@@ -11,30 +11,6 @@
     box-sizing: border-box;
 }
 
-/*variables*/
-$color-principal: black;
-$color-secundario:white;
-$color-terceario: #690507fc;
-/*listas*/
-$fuentes:
-13px,
-18px,
-20px,
-30px;
-/*mapas*/
-%flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-/*mixin*/
-@mixin flex ($flex, $justify, $align){
-    display: $flex;
-    justify-content: $justify;
-    align-items: $align;
-}
-
 /*fondo main*/
 .background-main {
     background-image: url(../img/maderacuadraditos.jpg);
