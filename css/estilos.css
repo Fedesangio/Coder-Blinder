@@ -8,6 +8,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*fondo main*/
+.background-main {
+  background-image: url(../img/maderacuadraditos.jpg); }
+
 /*variables*/
 /*listas*/
 /*mapas*/
@@ -18,10 +22,6 @@
   flex-direction: column; }
 
 /*mixin*/
-/*fondo main*/
-.background-main {
-  background-image: url(../img/maderacuadraditos.jpg); }
-
 /**--------NAV BOOTS*/
 .barra-nav a {
   text-decoration: none !important;
@@ -151,7 +151,6 @@ footer {
         height: 50px;
         margin-left: 20px; }
 
-/*----*/
 .header-index {
   padding-top: 160px;
   background-image: url(../img/prueba124fondo.jpg);
