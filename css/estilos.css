@@ -174,7 +174,7 @@ footer {
       .header-index .hero .hero-titulo-boton h3 {
         font-size: 30px;
         color: white;
-        font-family: truculenta;
+        font-family: "truculenta";
         font-weight: bold;
         text-shadow: 8px 8px 16px black;
         margin-bottom: 30px; }
@@ -195,7 +195,7 @@ footer {
         /* Bordes redondeados */
         padding: 5px 40px 5px 40px;
         height: 100px;
-        font-family: truculenta;
+        font-family: "truculenta";
         font-style: inherit;
         font-weight: bold; }
     .header-index .hero .hero-imagenes img {
@@ -206,7 +206,7 @@ footer {
 main .nosotros h1 {
   font-size: 80px;
   color: white;
-  font-family: truculenta;
+  font-family: "truculenta";
   text-shadow: 8px 8px 16px black;
   padding: 20px 80px;
   text-align: center;
@@ -218,7 +218,7 @@ main .nosotros p {
   background-color: rgba(14, 80, 14, 0.447);
   padding: 50px 200px;
   text-align: center;
-  font-family: truculenta;
+  font-family: "truculenta";
   text-shadow: 8px 8px 16px black; }
 
 main .categorias {
@@ -269,7 +269,7 @@ main .categorias {
     justify-content: center;
     align-items: center; }
     .bienvenidos div p {
-      font-family: truculenta;
+      font-family: "truculenta";
       font-size: 22px;
       color: white;
       font-weight: 500;
@@ -283,7 +283,7 @@ main .categorias {
     display: flex;
     flex-direction: row-reverse; }
     .bienvenidos .bienvenidos-segundo-contenedor p {
-      font-family: truculenta;
+      font-family: "truculenta";
       font-size: 22px;
       color: white;
       font-weight: 500;
@@ -362,7 +362,7 @@ main .productos {
     grid-column: 1/6; }
   main .productos h2 {
     color: white;
-    font-family: truculenta;
+    font-family: "truculenta";
     font-size: 70px;
     text-align: center;
     text-shadow: 2px 2px 4px black; }
@@ -398,7 +398,7 @@ main .productos {
 
 .titulo-promos h4 {
   color: white;
-  font-family: truculenta;
+  font-family: "truculenta";
   font-size: 60px !important; }
 
 .carousel-item img {
@@ -418,7 +418,7 @@ main .productos {
       margin: 15px 0px 15px 10px;
       font-size: 35px;
       text-align: center;
-      font-family: truculenta;
+      font-family: "truculenta";
       font-weight: 400;
       color: white; }
     .pagina-contacto .contacto-form .contacto div label {
@@ -477,7 +477,7 @@ main .productos {
   margin: 15px 0px 15px 10px;
   font-size: 35px;
   text-align: center;
-  font-family: truculenta;
+  font-family: "truculenta";
   font-weight: 400;
   color: white; }
 

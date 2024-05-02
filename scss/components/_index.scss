@@ -17,7 +17,7 @@
                 h3 {
                     font-size: 30px;
                     color: $color-secundario;
-                    font-family: truculenta;
+                    font-family: "truculenta";
                     font-weight: bold;
                     text-shadow: 8px 8px 16px $color-principal;
                     margin-bottom: 30px;
@@ -33,7 +33,7 @@
                     border-radius: 10px; /* Bordes redondeados */
                     padding: 5px 40px 5px 40px;
                     height: 100px;
-                    font-family: truculenta;
+                    font-family: "truculenta";
                     font-style: inherit;
                     font-weight: bold;
             }
@@ -52,7 +52,7 @@ main  {
         h1 {
             font-size: 80px;
             color: $color-secundario;
-            font-family: truculenta;
+            font-family: "truculenta";
             text-shadow: 8px 8px 16px $color-principal;
             padding: 20px 80px;
             text-align: center;
@@ -65,7 +65,7 @@ main  {
             background-color: rgba(14, 80, 14, 0.447);
             padding: 50px 200px;
             text-align: center;
-            font-family: truculenta;
+            font-family: "truculenta";
             text-shadow: 8px 8px 16px $color-principal;
         }
 }
@@ -128,7 +128,7 @@ main  {
             margin-top: 30px;
             @include flex (flex, center, center);
             p {
-                font-family: truculenta;
+                font-family: "truculenta";
                 font-size: 22px;
                 color: $color-secundario;
                 font-weight: 500;
@@ -145,7 +145,7 @@ main  {
             display: flex;
             flex-direction: row-reverse;
             p {
-                font-family: truculenta;
+                font-family: "truculenta";
                 font-size: 22px;
                 color: $color-secundario;
                 font-weight: 500;
