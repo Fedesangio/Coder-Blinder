@@ -4,222 +4,221 @@
     height: 100vh;
     background-size: cover;
     background-position: center ;
-    .hero {
-        @include flex (flex, center, center);
-        flex-direction: column;
-        height: calc(100vh - 104px);
-        .hero-titulo-boton {
-            width: 80%;
-            @include flex (flex, space-evenly, flex-start);
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin-bottom: 90px;
-                h3 {
-                    font-size: 30px;
-                    color: $color-secundario;
-                    font-family: "truculenta";
-                    font-weight: bold;
-                    text-shadow: 8px 8px 16px $color-principal;
-                    margin-bottom: 30px;
+.hero {
+    @include flex (flex, center, center);
+    flex-direction: column;
+    height: calc(100vh - 104px);
+.hero-titulo-boton {
+    width: 80%;
+    @include flex (flex, space-evenly, flex-start);
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+        h3 {
+            font-size: 30px;
+            color: $color-secundario;
+            font-family: "truculenta";
+            font-weight: bold;
+            text-shadow: 8px 8px 16px $color-principal;
+            margin-bottom: 30px;
             }
-                a {
-                    background-color: #ffffff8b; /* Color de fondo */
-                    /*border: 4px solid #e79406aa; /* Borde*/
-                    color: green; /* Color del texto */
-                    text-shadow: 1px 1px 2px $color-principal;
-                    text-align: center; /* Alineación del texto */
-                    text-decoration: none; /* Sin   subrayado */
-                    font-size: 60px; /* Tamaño de la fuente */
-                    border-radius: 10px; /* Bordes redondeados */
-                    padding: 5px 40px 5px 40px;
-                    height: 100px;
-                    font-family: "truculenta";
-                    font-style: inherit;
-                    font-weight: bold;
-            }
-    }
-        .hero-imagenes {
-                img {
-                    width: 150px;
-                    height: 150px;
-                    margin-bottom: 90px;
+        a {
+            background-color: #ffffff8b; /* Color de fondo */
+            /*border: 4px solid #e79406aa; /* Borde*/
+            color: green; /* Color del texto */
+            text-shadow: 1px 1px 2px $color-principal;
+            text-align: center; /* Alineación del texto */
+            text-decoration: none; /* Sin   subrayado */
+            font-size: 60px; /* Tamaño de la fuente */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 5px 40px 5px 40px;
+            height: 100px;
+            font-family: "truculenta";
+            font-style: inherit;
+            font-weight: bold;
+            transition: 1s;
+            animation-direction: booth;
+        &:hover {
+            box-shadow: 0 0 30px white;
         }
-    }
+        
+}
+}
+
+.hero-imagenes {
+    img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 90px;
+}
+}
 }
 }
 main  {
-    .nosotros {
-        h1 {
-            font-size: 80px;
-            color: $color-secundario;
-            font-family: "truculenta";
-            text-shadow: 8px 8px 16px $color-principal;
-            padding: 20px 80px;
-            text-align: center;
-            height: auto;
-
-        }
-        p {
-            font-size: 30px;
-            color: $color-secundario;
-            background-color: rgba(14, 80, 14, 0.447);
-            padding: 50px 200px;
-            text-align: center;
-            font-family: "truculenta";
-            text-shadow: 8px 8px 16px $color-principal;
+.nosotros {
+    h1 {
+        font-size: 80px;
+        color: $color-secundario;
+        font-family: "truculenta";
+        text-shadow: 8px 8px 16px $color-principal;
+        padding: 20px 80px;
+        text-align: center;
+        height: auto;
+}
+    p {
+        font-size: 30px;
+        color: $color-secundario;
+        background-color: rgba(14, 80, 14, 0.447);
+        padding: 50px 200px;
+        text-align: center;
+        font-family: "truculenta";
+        text-shadow: 8px 8px 16px $color-principal;
+}
+}
+.categorias {
+    margin-top: 30px;
+    div {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        row-gap: 50px;
+        grid-auto-rows: auto;
+        align-content: center;            /* Espacio entre las celdas */
+.imagen-primer-contenedor{
+    background-image: url(../img/productos/branca1.jpg);
+    background-position: center;
+        &:hover {
+            scale: 1.1;
+            transition-duration: 1s;
         }
 }
-    .categorias {
-            margin-top: 30px;
-        div {
-            width: 90%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-            row-gap: 50px;
-            grid-auto-rows: auto;
-            align-content: center;            /* Espacio entre las celdas */
-            .imagen-primer-contenedor{
-                background-image: url(../img/productos/branca1.jpg);
-                background-position: center;
-
-                &:hover {
-                    scale: 1.1;
-                    transition-duration: 1s;
-                }
-            }
-            .imagen-segundo-contenedor{
-                background-image: url(../img/productos/tanqueray1.jpg);
-                background-position: center;
-                &:hover {
-                    scale: 1.1;
-                    transition-duration: 1s;
-                }
-            }
-            .imagen-tercer-contenedor{
-                background-image: url(../img/productos/jagermaister1.jpg);
-                background-position: center;
-                &:hover {
-                    scale: 1.1;
-                    transition-duration: 1s;
-                }
-            }
-            .imagen-cuarto-contenedor{
-                background-image: url(../img/productos/bluelabel1.jpg);
-                background-size: cover;
-                &:hover {
-                    scale: 1.1;
-                    transition-duration: 1s;
-                }
-            }
+.imagen-segundo-contenedor{
+    background-image: url(../img/productos/tanqueray1.jpg);
+    background-position: center;
+        &:hover {
+            scale: 1.1;
+            transition-duration: 1s;
+}
+}
+.imagen-tercer-contenedor{
+    background-image: url(../img/productos/jagermaister1.jpg);
+    background-position: center;
+        &:hover {
+            scale: 1.1;
+            transition-duration: 1s;
+}
+}
+.imagen-cuarto-contenedor{
+    background-image: url(../img/productos/bluelabel1.jpg);
+    background-size: cover;
+        &:hover {
+            scale: 1.1;
+            transition-duration: 1s;
         }
-    }
-
-
-    }
-    .bienvenidos {
-        margin-top: 20px;
-        padding: 20px;
-        @extend %flex-center;
+}
+}
+}
+}
+.bienvenidos {
+    margin-top: 20px;
+    padding: 20px;
+    @extend %flex-center;
         div {
             height: auto;
             margin: auto;
             margin-top: 30px;
             @include flex (flex, center, center);
-            p {
-                font-family: "truculenta";
-                font-size: 22px;
-                color: $color-secundario;
-                font-weight: 500;
-                padding: 90px;
-                background-color: rgba(0, 0, 0, 0.652);
-                border-radius: 2px, solid, $color-secundario;
-            }
-            img {
-                width: 500px;
-                height: 400px;
-            }
+        p {
+            font-family: "truculenta";
+            font-size: 22px;
+            color: $color-secundario;
+            font-weight: 500;
+            padding: 90px;
+            background-color: rgba(0, 0, 0, 0.652);
+            border-radius: 2px, solid, $color-secundario;
+}
+        img {
+            width: 500px;
+            height: 400px;
+}
+}
+.bienvenidos-segundo-contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+        p {
+            font-family: "truculenta";
+            font-size: 22px;
+            color: $color-secundario;
+            font-weight: 500;
+            padding: 70px;
+            background-color: rgba(0, 0, 0, 0.652);
+            border-radius: 2px, solid, $color-secundario;
         }
-        .bienvenidos-segundo-contenedor {
-            display: flex;
-            flex-direction: row-reverse;
-            p {
-                font-family: "truculenta";
-                font-size: 22px;
-                color: $color-secundario;
-                font-weight: 500;
-                padding: 70px;
-                background-color: rgba(0, 0, 0, 0.652);
-                border-radius: 2px, solid, $color-secundario;
-            }
-            img {
-                width: 500px;
-                height: 400px;
-            }
-        }
-    }
+        img {
+            width: 500px;
+            height: 400px;
+}
+}
+}
 
-
-
-    .hashtag {
-        @include flex ( flex, center, center);
+.hashtag {
+    @include flex ( flex, center, center);
+    flex-direction: column;
         img {
             width: 500px;
             height: 200px;
-        }
-    }
-
-    .fotos-grid{
-        @include flex ( flex, center, center);
-        min-height: 100vh;
-        .galeria-grid {
-            max-width: 70%;
-            /*define el tamaño de la grilla*/
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: 250px;
-            grid-gap: 10px;
-            /* Espacio entre las celdas */
-            margin: 50px;
-            div {
-                img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px;
-                }
-            }
-        }
-        .galeria-grid .img-a {
-            grid-column: 1/3;
-        }
-        .galeria-grid .img-b {
-            grid-column: 3/5;
-        }
-        .galeria-grid .img-d {
-            grid-column: 2/4;
-            grid-row: 2/4;
-        }
-        .galeria-grid .img-f {
-            grid-row: 3/5;
-        }
-        .galeria-grid .img-g {
-            grid-row: 3/5;
-        }
+}
 }
 
-    .fixed {
-        img {
-            /* Imagen de WHatsapp FLotante*/
-    width: 60px;
-    height: 60px;
-    position: fixed;
-/*Fija la posicion en la pagina*/
-    bottom: 30px;
-    right: 30px;
+.fotos-grid{
+    @include flex ( flex, center, center);
+    min-height: 100vh;
+.galeria-grid {
+    max-width: 70%;
+    /*define el tamaño de la grilla*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 10px;
+    /* Espacio entre las celdas */
+    margin: 50px;
+        div {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+}
+}
+}
+.galeria-grid .img-a {
+    grid-column: 1/3;
+}
+.galeria-grid .img-b {
+    grid-column: 3/5;
+}
+.galeria-grid .img-d {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+.galeria-grid .img-f {
+    grid-row: 3/5;
+}
+.galeria-grid .img-g {
+    grid-row: 3/5;
+}
+}
 
-        }
+.fixed { 
+    img {        
+        width: 60px;
+        height: 60px;
+        position: fixed; /*Fija la posicion en la pagina*/
+        bottom: 30px;
+        right: 30px;
+}
 }
 
 

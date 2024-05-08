@@ -93,12 +93,61 @@
   padding: 5px 40px 5px 40px;
   margin-bottom: 5px; }
 
+/*-Imagenes flotantes-*/
+.fixed a {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: 1s;
+  animation-name: pulse; }
+  .fixed a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 255, 17, 0.566);
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: both; }
+  .fixed a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 201, 2, 0.496);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: both; }
+
+@keyframes pulse {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 0;
+    scale: 2; } }
+
 footer {
   background-image: url(../img/fondo.jpg);
   height: auto; }
   footer section {
     max-width: 100%;
-    /*define el tamaño de la grilla*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto; }
@@ -197,7 +246,11 @@ footer {
         height: 100px;
         font-family: "truculenta";
         font-style: inherit;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: 1s;
+        animation-direction: booth; }
+        .header-index .hero .hero-titulo-boton a:hover {
+          box-shadow: 0 0 30px white; }
     .header-index .hero .hero-imagenes img {
       width: 150px;
       height: 150px;
@@ -297,7 +350,8 @@ main .categorias {
 .hashtag {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .hashtag img {
     width: 500px;
     height: 200px; }
@@ -334,7 +388,6 @@ main .categorias {
     grid-row: 3/5; }
 
 .fixed img {
-  /* Imagen de WHatsapp FLotante*/
   width: 60px;
   height: 60px;
   position: fixed;
@@ -347,9 +400,7 @@ main .productos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  /* Espacio entre las celdas */
   grid-gap: 30px;
-  /* Espacio entre las celdas */
   margin: auto;
   padding-bottom: 30px; }
   main .productos .primer-banner {
@@ -371,10 +422,10 @@ main .productos {
     width: auto;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    border-radius: 15px; }
+    border-radius: 15px;
+    transition-duration: 1s; }
     main .productos .productos-contenedor:hover {
-      scale: 1.2;
-      transition-duration: 1s; }
+      scale: 1.1; }
     main .productos .productos-contenedor div img {
       width: 150px;
       height: 150px; }
@@ -395,6 +446,14 @@ main .productos {
     main .productos .productos-contenedor div a {
       text-decoration: none;
       margin-top: 1rem; }
+
+.fixed2 img {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  border-radius: 100%; }
 
 .titulo-promos h4 {
   color: white;
@@ -466,11 +525,9 @@ main .productos {
   background-color: #0e500e;
   font-size: 19px;
   margin: 10px;
-  /* Color de fondo */
   border: 2px solid black;
   text-align: center;
   border-radius: 10px;
-  /* Bordes redondeados */
   padding: auto; }
 
 .formulario-mapa div h3 {
@@ -663,13 +720,42 @@ main {
 /*--------------------------------------------------------------------------------------------------600*/
 @media screen and (max-width: 600px) {
   .fixed img {
-    /* Imagen de WHatsapp FLotante*/
     width: 40px;
     height: 40px;
     position: fixed;
-    /*Fija la posicion en la pagina*/
-    bottom: 30px;
-    right: 30px; }
+    bottom: 40px;
+    right: 40px; }
+    .fixed img::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(2, 201, 2, 0.496);
+      border-radius: 50%;
+      z-index: -1;
+      opacity: .8;
+      animation-name: pulse;
+      animation-duration: 2s;
+      animation-delay: 0.3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: both; }
+  @keyframes pulse {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: .5; }
+    100% {
+      opacity: 0;
+      scale: 1; } }
+  .fixed2 img {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 85px;
+    right: 40px; }
   .boton-comprar {
     padding: 5px 25px 5px 25px; }
   /*--------------------------------------------------------------------------PROMOS*/
