@@ -37,7 +37,6 @@
             font-style: inherit;
             font-weight: bold;
             transition: 1s;
-            animation-direction: booth;
         &:hover {
             box-shadow: 0 0 30px white;
         }
@@ -50,6 +49,12 @@
         width: 150px;
         height: 150px;
         margin-bottom: 90px;
+        transition: 1s;
+    &:hover {
+        scale: 1.1;
+    }
+
+
 }
 }
 }
@@ -64,6 +69,7 @@ main  {
         padding: 20px 80px;
         text-align: center;
         height: auto;
+        
 }
     p {
         font-size: 30px;
@@ -89,33 +95,33 @@ main  {
 .imagen-primer-contenedor{
     background-image: url(../img/productos/branca1.jpg);
     background-position: center;
+    transition-duration: 1s;
         &:hover {
             scale: 1.1;
-            transition-duration: 1s;
         }
 }
 .imagen-segundo-contenedor{
     background-image: url(../img/productos/tanqueray1.jpg);
     background-position: center;
+    transition-duration: 1s;
         &:hover {
             scale: 1.1;
-            transition-duration: 1s;
 }
 }
 .imagen-tercer-contenedor{
     background-image: url(../img/productos/jagermaister1.jpg);
     background-position: center;
+    transition-duration: 1s;
         &:hover {
             scale: 1.1;
-            transition-duration: 1s;
 }
 }
 .imagen-cuarto-contenedor{
     background-image: url(../img/productos/bluelabel1.jpg);
     background-size: cover;
+    transition-duration: 1s;
         &:hover {
             scale: 1.1;
-            transition-duration: 1s;
         }
 }
 }
@@ -181,7 +187,7 @@ main  {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 250px;
-    grid-gap: 10px;
+    grid-gap: 5px;
     /* Espacio entre las celdas */
     margin: 50px;
         div {
@@ -190,6 +196,7 @@ main  {
                 width: 100%;
                 height: 100%;
                 border-radius: 10px;
+                transition: 1s;
 }
 }
 }
@@ -209,6 +216,20 @@ main  {
 .galeria-grid .img-g {
     grid-row: 3/5;
 }
+}
+
+.fotos-grid>img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1s;
+    opacity: 1;
+}
+
+
+.galeria-grid:hover img:not(:hover) {
+    transform: scale(0.95);
+    opacity: 0.3;
 }
 
 .fixed { 
