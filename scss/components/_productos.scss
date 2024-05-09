@@ -32,41 +32,74 @@ main {
     background-color: $color-secundario;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 15px;
-    transition-duration: 1s;
+    transition: 1s;
     opacity: 80%;
         &:hover {
             scale: 1.1;
             opacity: 100%;
 
+        
+    &:hover a {
+        animation-name: btn-comprar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate; //esto es que va y vuelve asi no hay saltos en la animacion
+    animation-iteration-count: infinite;
+    }
 }
-        div {
-        @extend %flex-center;
-            img {
-                width: 150px;
-                height: 150px;
+
+    @keyframes btn-comprar {
+    to {
+        scale: 1.1;
+        box-shadow: 0 0 20px black
+    }    
 }
-            h3 {
-                width: 90%;
-                height: 50px;
-                color: $color-principal;
-                font-family: poppins;
-                font-weight: 600;
-                text-align: center;
-                font-size: 15px;
+div {
+    @extend %flex-center;
+    img {
+        width: 150px;
+        height: 150px;
 }
+    h3 {
+    color: $color-principal;
+    font-family: poppins;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
 }
-        div {
-            p {
-                text-align: center;
-                font-size: 19px;
-                font-weight: 600;
-            }
-.seleccionar-cantidad {
+    h4 {
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    }
+    div {
+        p {
+            text-align: center;
+            font-size: 19px;
+            font-weight: 600;
+        }
+.tarj-cant {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    label {
+        font-family: truculenta;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    input {
+        width: 50px;
+        margin-left: 20px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        text-align: center;
+        margin-bottom: 20px;
 }
-        a {
-            text-decoration: none;
-            margin-top: 16px;
 }
 }
 }

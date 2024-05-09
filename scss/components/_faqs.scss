@@ -1,28 +1,143 @@
-main {
-    background-image: none;
-.frecuentes {
-    @include flex ( flex, space-between, center);
-.frecuentes-desplega {
-        margin-left: 30px;
-        width: 90%;
+body {
+    font-family: "truculenta";
 }
-.frecuentes2 {
-    background-color: #2324255f;
-        h3 {
-            font-size: 25px;
-            margin: 30px 30px;
-}
-        p {
 
-            padding: 20px;
-            font-size: 16px;
-            text-align: center;
+.seccion-acordeon {
+    padding: 20px;
 }
-        img {
-            margin-left: 30px;
-            margin-top: 20px;
-            width: 90%;
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 50px;
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+        color: white;
+        text-shadow: 8px 4px 8px black;
+    }
+
+    .accordion-item {
+        margin-top: 20px;
+        border: 1px solid #fcfcfc;
+        border-radius: 6px;
+        background: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+        .accordion-item-title {
+            position: relative;
+            margin: 0;
+            display: flex;
+            width: 100%;
+            font-size: 20px;
+            cursor: pointer;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding: 14px 20px;
+            box-sizing: border-box;
+            align-items: center;
+
+            .icon {
+                margin-left: 14px;
+            }
+        }
+
+        .accordion-item-desc {
+            display: none;
+            font-size: 17px;
+            line-height: 22px;
+            font-weight: 600;
+            color: #444;
+            border-top: 1px dashed #ddd;
+            padding: 10px 20px 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+
+        input[type="checkbox"]:checked~.accordion-item-desc {
+            display: block;
+        }
+
+        input[type="checkbox"]:checked~.accordion-item-title .icon:after {
+            content: "-";
+            font-size: 20px;
+        }
+
+        input[type="checkbox"]~.accordion-item-title .icon:after {
+            content: "+";
+            font-size: 20px;
+        }
+    }
+
+    .accordion-item:first-child {
+        margin-top: 0;
+    }
 }
+
+.testimonials {
+    padding: 40px 0;
+    text-align: center;
+
+
+
+.testimonial-inner {
+    overflow: hidden;
+    padding: 0 20px;
+
+    h2 {
+        color: white;
+    }
+
+    spam {
+        color: white;
+    }
+
+    .border {
+        width: 500px;
+        height: 5px;
+        background: rgb(121, 30, 0);
+        margin: 26px auto;
+    }
+
+.testimonios {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .testimonios-col {
+        box-sizing: border-box;
+        padding: 15px;
+        .testimonial {
+            width: 300px;
+            height: 450px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .name {
+                font-size: 20px;
+                text-transform: uppercase;
+                margin: 20px 0;
+            }
+            .stars {
+                color: #f0932b;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 }
 }
