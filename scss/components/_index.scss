@@ -25,7 +25,7 @@
         a {
             background-color: #ffffff8b; /* Color de fondo */
             /*border: 4px solid #e79406aa; /* Borde*/
-            color: green; /* Color del texto */
+            color: rgb(3, 96, 3); /* Color del texto */
             text-shadow: 1px 1px 2px $color-principal;
             text-align: center; /* Alineación del texto */
             text-decoration: none; /* Sin   subrayado */
@@ -48,7 +48,7 @@
     img {
         width: 150px;
         height: 150px;
-        margin-bottom: 90px;
+        margin: 0 10px 90px 5px;
         transition: 1s;
     &:hover {
         scale: 1.1;
@@ -63,9 +63,9 @@ main  {
 .nosotros {
     h1 {
         font-size: 80px;
-        color: $color-secundario;
+        color: rgba(0, 0, 0, 0.812);
         font-family: "truculenta";
-        text-shadow: 8px 8px 16px $color-principal;
+        text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.453);
         padding: 20px 80px;
         text-align: center;
         height: auto;
@@ -74,7 +74,7 @@ main  {
     p {
         font-size: 30px;
         color: $color-secundario;
-        background-color: rgba(14, 80, 14, 0.447);
+        background-color: rgb(8, 68, 8);
         padding: 50px 200px;
         text-align: center;
         font-family: "truculenta";
@@ -142,7 +142,7 @@ main  {
             color: $color-secundario;
             font-weight: 500;
             padding: 90px;
-            background-color: rgba(0, 0, 0, 0.652);
+            background-color: rgba(0, 0, 0, 0.871);
             border-radius: 2px, solid, $color-secundario;
 }
         img {
@@ -159,7 +159,7 @@ main  {
             color: $color-secundario;
             font-weight: 500;
             padding: 70px;
-            background-color: rgba(0, 0, 0, 0.652);
+            background-color: rgba(0, 0, 0, 0.832);
             border-radius: 2px, solid, $color-secundario;
         }
         img {

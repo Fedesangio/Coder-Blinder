@@ -10,12 +10,13 @@
 
 /*fondo main*/
 .background-main {
-  background-image: url(../img/maderacuadraditos.jpg); }
+  background-image: url(../img/layered-peaks-haikei.svg);
+  background-size: cover; }
 
 /*variables*/
 /*listas*/
 /*mapas*/
-.bienvenidos, main .productos .productos-contenedor div {
+.bienvenidos, main .productos div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +241,7 @@
         background-color: #ffffff8b;
         /* Color de fondo */
         /*border: 4px solid #e79406aa; /* Borde*/
-        color: green;
+        color: #036003;
         /* Color del texto */
         text-shadow: 1px 1px 2px black;
         text-align: center;
@@ -262,16 +263,16 @@
     .header-index .hero .hero-imagenes img {
       width: 150px;
       height: 150px;
-      margin-bottom: 90px;
+      margin: 0 10px 90px 5px;
       transition: 1s; }
       .header-index .hero .hero-imagenes img:hover {
         scale: 1.1; }
 
 main .nosotros h1 {
   font-size: 80px;
-  color: white;
+  color: rgba(0, 0, 0, 0.812);
   font-family: "truculenta";
-  text-shadow: 8px 8px 16px black;
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.453);
   padding: 20px 80px;
   text-align: center;
   height: auto; }
@@ -279,7 +280,7 @@ main .nosotros h1 {
 main .nosotros p {
   font-size: 30px;
   color: white;
-  background-color: rgba(14, 80, 14, 0.447);
+  background-color: #084408;
   padding: 50px 200px;
   text-align: center;
   font-family: "truculenta";
@@ -338,7 +339,7 @@ main .categorias {
       color: white;
       font-weight: 500;
       padding: 90px;
-      background-color: rgba(0, 0, 0, 0.652);
+      background-color: rgba(0, 0, 0, 0.871);
       border-radius: 2px, solid, white; }
     .bienvenidos div img {
       width: 500px;
@@ -352,7 +353,7 @@ main .categorias {
       color: white;
       font-weight: 500;
       padding: 70px;
-      background-color: rgba(0, 0, 0, 0.652);
+      background-color: rgba(0, 0, 0, 0.832);
       border-radius: 2px, solid, white; }
     .bienvenidos .bienvenidos-segundo-contenedor img {
       width: 500px;
@@ -451,53 +452,53 @@ main .productos {
     main .productos .productos-contenedor:hover {
       scale: 1.1;
       opacity: 100%; }
-      main .productos .productos-contenedor:hover:hover a {
-        animation-name: btn-comprar;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-direction: alternate;
-        animation-iteration-count: infinite; }
+    main .productos .productos-contenedor:hover a {
+      animation-name: btn-comprar;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+      animation-iteration-count: infinite; }
 
 @keyframes btn-comprar {
   to {
     scale: 1.1;
     box-shadow: 0 0 20px black; } }
-    main .productos .productos-contenedor div img {
-      width: 150px;
-      height: 150px; }
-    main .productos .productos-contenedor div h3 {
-      color: black;
-      font-family: poppins;
+  main .productos div img {
+    width: 150px;
+    height: 150px; }
+  main .productos div h3 {
+    color: black;
+    font-family: poppins;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px; }
+  main .productos div h4 {
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px; }
+  main .productos div p {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600; }
+  main .productos div .tarj-cant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    main .productos div .tarj-cant label {
+      font-family: truculenta;
+      font-size: 16px;
       font-weight: 600;
-      text-align: center;
-      font-size: 18px; }
-    main .productos .productos-contenedor div h4 {
-      height: 30px;
-      font-size: 14px;
-      font-weight: 400;
+      margin-bottom: 20px; }
+    main .productos div .tarj-cant input {
+      width: 50px;
+      margin-left: 20px;
+      border-radius: 10px;
+      border: 1px solid gray;
       text-align: center;
       margin-bottom: 20px; }
-    main .productos .productos-contenedor div p {
-      text-align: center;
-      font-size: 19px;
-      font-weight: 600; }
-    main .productos .productos-contenedor div .tarj-cant {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
-      main .productos .productos-contenedor div .tarj-cant label {
-        font-family: truculenta;
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 20px; }
-      main .productos .productos-contenedor div .tarj-cant input {
-        width: 50px;
-        margin-left: 20px;
-        border-radius: 10px;
-        border: 1px solid gray;
-        text-align: center;
-        margin-bottom: 20px; }
 
 .fixed2 img {
   width: 60px;
@@ -567,7 +568,7 @@ main .productos {
   font-size: 1rem;
   font-family: poppins;
   font-weight: 400;
-  color: #232425; }
+  color: #fafafa; }
 
 .botones-consulta input {
   text-decoration: none;
@@ -608,9 +609,9 @@ body {
     text-shadow: 8px 4px 8px black; }
   .accordion .accordion-item {
     margin-top: 20px;
-    border: 1px solid #fcfcfc;
+    border: 2px solid #fcfcfc;
     border-radius: 6px;
-    background: #ffffff;
+    background: #d0d0d0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; }
     .accordion .accordion-item .accordion-item-title {
       position: relative;
@@ -631,7 +632,7 @@ body {
       font-size: 17px;
       line-height: 22px;
       font-weight: 600;
-      color: #444;
+      color: #000000;
       border-top: 1px dashed #ddd;
       padding: 10px 20px 20px;
       box-sizing: border-box; }
@@ -765,6 +766,12 @@ body {
     width: 80%;
     margin-bottom: 15px; } }
 
+@media screen and (max-width: 950px) {
+  .productos-contenedor h3 {
+    height: 45px; }
+  .productos-contenedor h4 {
+    padding: 0px 15px; } }
+
 @media screen and (max-width: 750px) {
   .header-index .hero .hero-imagenes {
     display: grid;
@@ -775,7 +782,7 @@ body {
     .header-index .hero .hero-imagenes img {
       width: 100px;
       height: 100px;
-      margin-bottom: 0px; }
+      margin: 0px 5px 0px 5px; }
   .header-index .hero .hero-titulo-boton a {
     font-size: 60px;
     /* Tamaño de la fuente */
@@ -879,7 +886,7 @@ body {
     .header-index .hero .hero-imagenes img {
       width: 70px;
       height: 80px;
-      margin-bottom: 0px; }
+      margin: 0px 0px; }
   main .nosotros h1 {
     font-size: 30px;
     padding: 20px 0px;
@@ -927,4 +934,7 @@ body {
   /*-------------------------------------------------------PAGINA FORMULARIO*/
   .pagina-contacto .contacto-form {
     width: 90%;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .botones-consulta input {
+    width: 100px;
+    font-size: 14px; } }
