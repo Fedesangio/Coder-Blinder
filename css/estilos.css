@@ -84,7 +84,7 @@
   background-image: url(../img/fondo.jpg); }
 
 .boton-comprar {
-  background-color: #690507fc;
+  background-color: #0e500e;
   border: 2px solid black;
   color: white !important;
   text-align: center;
@@ -92,7 +92,8 @@
   font-size: 16px;
   border-radius: 10px;
   padding: 5px 40px 5px 40px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  transition: 2s; }
 
 /*-Imagenes flotantes-*/
 .fixed a {
@@ -177,7 +178,7 @@
       text-decoration: none;
       transition: 1s; }
       .site-footer .footer-links a:hover {
-        color: red; }
+        color: #177f17; }
   .site-footer .social-icons {
     text-align: right; }
     .site-footer .social-icons li {
@@ -338,10 +339,14 @@ main .categorias {
       font-size: 22px;
       color: white;
       font-weight: 500;
-      padding: 90px;
+      padding: 50px;
       background-color: rgba(0, 0, 0, 0.871);
-      border-radius: 2px, solid, white; }
+      border-radius: 15px 0px 0px 15px; }
+      .bienvenidos div p span {
+        color: #0e500e;
+        font-size: 24px; }
     .bienvenidos div img {
+      border-radius: 15px 15px 15px 15px;
       width: 500px;
       height: 400px; }
   .bienvenidos .bienvenidos-segundo-contenedor {
@@ -352,10 +357,14 @@ main .categorias {
       font-size: 22px;
       color: white;
       font-weight: 500;
-      padding: 70px;
+      padding: 50px;
       background-color: rgba(0, 0, 0, 0.832);
-      border-radius: 2px, solid, white; }
+      border-radius: 0px 15px 15px 0px; }
+      .bienvenidos .bienvenidos-segundo-contenedor p span {
+        color: #0e500e;
+        font-size: 24px; }
     .bienvenidos .bienvenidos-segundo-contenedor img {
+      border-radius: 15px 15px 15px 15px;
       width: 500px;
       height: 400px; }
 
@@ -447,8 +456,7 @@ main .productos {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 15px;
-    transition: 1s;
-    opacity: 80%; }
+    transition: 1s; }
     main .productos .productos-contenedor:hover {
       scale: 1.1;
       opacity: 100%; }
@@ -510,6 +518,7 @@ main .productos {
 
 .titulo-promos h4 {
   color: white;
+  text-shadow: 8px 4px 8px black;
   font-family: "truculenta";
   font-size: 60px !important; }
 
@@ -559,7 +568,8 @@ main .productos {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: wrap; }
     .pagina-contacto .formulario-genero div {
       margin: 10px;
       margin-left: 16px; }
@@ -609,7 +619,7 @@ body {
     text-shadow: 8px 4px 8px black; }
   .accordion .accordion-item {
     margin-top: 20px;
-    border: 2px solid #fcfcfc;
+    border: 2px solid #0e500e;
     border-radius: 6px;
     background: #d0d0d0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; }
@@ -633,6 +643,7 @@ body {
       line-height: 22px;
       font-weight: 600;
       color: #000000;
+      background-color: white;
       border-top: 1px dashed #ddd;
       padding: 10px 20px 20px;
       box-sizing: border-box; }
@@ -645,10 +656,10 @@ body {
       display: block; }
     .accordion .accordion-item input[type="checkbox"]:checked ~ .accordion-item-title .icon:after {
       content: "-";
-      font-size: 20px; }
+      font-size: 35px; }
     .accordion .accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
       content: "+";
-      font-size: 20px; }
+      font-size: 35px; }
   .accordion .accordion-item:first-child {
     margin-top: 0; }
 
@@ -659,13 +670,15 @@ body {
     overflow: hidden;
     padding: 0 20px; }
     .testimonials .testimonial-inner h2 {
-      color: white; }
+      color: white;
+      text-shadow: 2px 2px 4px black; }
     .testimonials .testimonial-inner spam {
-      color: white; }
+      color: white;
+      text-shadow: 2px 2px 4px black; }
     .testimonials .testimonial-inner .border {
       width: 500px;
       height: 5px;
-      background: #791e00;
+      background: #0e500e;
       margin: 26px auto; }
     .testimonials .testimonial-inner .testimonios {
       display: flex;
@@ -678,9 +691,16 @@ body {
         .testimonials .testimonial-inner .testimonios .testimonios-col .testimonial {
           width: 300px;
           height: 450px;
-          background: #fff;
+          backdrop-filter: blur(0px) saturate(57%);
+          -webkit-backdrop-filter: blur(0px) saturate(57%);
+          background-color: rgba(39, 40, 34, 0.24);
+          border-radius: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.125);
           padding: 30px;
           border-radius: 20px; }
+          .testimonials .testimonial-inner .testimonios .testimonios-col .testimonial p {
+            color: #000000;
+            font-weight: 500; }
           .testimonials .testimonial-inner .testimonios .testimonios-col .testimonial img {
             width: 100px;
             height: 100px;
@@ -693,9 +713,9 @@ body {
             color: #f0932b;
             margin-bottom: 20px; }
 
-@media screen and (max-width: 1245px) {
+@media screen and (max-width: 1350px) {
   .header-index {
-    padding-top: 100px; }
+    padding-top: 120px; }
     .header-index .hero {
       justify-content: space-around; }
       .header-index .hero .hero-titulo-boton {
@@ -772,40 +792,48 @@ body {
   .productos-contenedor h4 {
     padding: 0px 15px; } }
 
-@media screen and (max-width: 750px) {
-  .header-index .hero .hero-imagenes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 30px;
-    row-gap: 5px; }
-    .header-index .hero .hero-imagenes img {
-      width: 100px;
+@media screen and (max-width: 790px) {
+  .header-index {
+    padding-top: 90px; }
+    .header-index .hero .hero-imagenes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 30px;
+      row-gap: 5px; }
+      .header-index .hero .hero-imagenes img {
+        width: 100px;
+        height: 100px;
+        margin: 0px 5px 0px 5px; }
+    .header-index .hero .hero-titulo-boton a {
+      font-size: 60px;
+      /* Tamaño de la fuente */
+      border-radius: 10px;
+      /* Bordes redondeados */
+      padding: 10px 50px 10px 50px;
       height: 100px;
-      margin: 0px 5px 0px 5px; }
-  .header-index .hero .hero-titulo-boton a {
-    font-size: 60px;
-    /* Tamaño de la fuente */
-    border-radius: 10px;
-    /* Bordes redondeados */
-    padding: 10px 50px 10px 50px;
-    height: 100px;
-    font-family: truculenta;
-    font-style: inherit;
-    font-weight: bold; }
-  .bienvenidos div {
-    height: auto;
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center; }
-  .bienvenidos .bienvenidos-segundo-contenedor {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center; }
+      font-family: truculenta;
+      font-style: inherit;
+      font-weight: bold; }
+  .bienvenidos {
+    padding: 15px; }
+    .bienvenidos div {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center; }
+      .bienvenidos div img {
+        border-radius: 15px 15px 0px 0px; }
+      .bienvenidos div p {
+        border-radius: 15px 15px 15px 15px; }
+    .bienvenidos .bienvenidos-segundo-contenedor {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center; }
+      .bienvenidos .bienvenidos-segundo-contenedor img {
+        border-radius: 15px 15px 0px 0px; }
+      .bienvenidos .bienvenidos-segundo-contenedor p {
+        border-radius: 15px 15px 15px 15px; }
   .hashtag {
     display: flex;
     justify-content: center;
@@ -855,7 +883,10 @@ body {
       grid-column: 1/4; }
     main .productos .productos-contenedor div img {
       width: 100px;
-      height: 100px; } }
+      height: 100px; }
+  .container .row .col-md-3 {
+    width: 50%;
+    justify-content: center; } }
 
 /*--------------------------------------------------------------------------------------------------600*/
 @media screen and (max-width: 600px) {
@@ -901,20 +932,18 @@ body {
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 40px; }
-  .bienvenidos {
-    padding: 0px; }
-    .bienvenidos div p {
-      font-size: 16px;
-      padding: 30px; }
-    .bienvenidos div img {
-      width: 300px;
-      height: 300px; }
-    .bienvenidos .bienvenidos-segundo-contenedor p {
-      font-size: 16px;
-      padding: 20px; }
-    .bienvenidos .bienvenidos-segundo-contenedor img {
-      width: 300px;
-      height: 300px; }
+  .bienvenidos div p {
+    font-size: 16px;
+    padding: 30px; }
+  .bienvenidos div img {
+    width: 300px;
+    height: 300px; }
+  .bienvenidos .bienvenidos-segundo-contenedor p {
+    font-size: 16px;
+    padding: 20px; }
+  .bienvenidos .bienvenidos-segundo-contenedor img {
+    width: 300px;
+    height: 300px; }
   /**------------------------------------------------------PRODUCTOS*/
   main .productos {
     width: 90%;

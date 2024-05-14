@@ -9,6 +9,7 @@ body {
 .accordion {
     display: flex;
     flex-direction: column;
+
     margin: auto;
     padding: 0 50px;
 
@@ -21,7 +22,7 @@ body {
 
     .accordion-item {
         margin-top: 20px;
-        border: 2px solid #fcfcfc;
+        border: 2px solid $color-terceario;
         border-radius: 6px;
         background: #d0d0d0;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -50,6 +51,7 @@ body {
             line-height: 22px;
             font-weight: 600;
             color: #000000;
+            background-color: white;
             border-top: 1px dashed #ddd;
             padding: 10px 20px 20px;
             box-sizing: border-box;
@@ -68,12 +70,12 @@ body {
 
         input[type="checkbox"]:checked~.accordion-item-title .icon:after {
             content: "-";
-            font-size: 20px;
+            font-size: 35px;
         }
 
         input[type="checkbox"]~.accordion-item-title .icon:after {
             content: "+";
-            font-size: 20px;
+            font-size: 35px;
         }
     }
 
@@ -94,16 +96,18 @@ body {
 
     h2 {
         color: white;
+        text-shadow: 2px 2px 4px $color-principal
     }
 
     spam {
         color: white;
+        text-shadow: 2px 2px 4px $color-principal
     }
 
     .border {
         width: 500px;
         height: 5px;
-        background: rgb(121, 30, 0);
+        background: $color-terceario;
         margin: 26px auto;
     }
 
@@ -119,9 +123,19 @@ body {
         .testimonial {
             width: 300px;
             height: 450px;
-            background: #fff;
+            
+            backdrop-filter: blur(0px) saturate(57%);
+            -webkit-backdrop-filter: blur(0px) saturate(57%);
+            background-color: rgba(39, 40, 34, 0.24);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+
             padding: 30px;
             border-radius: 20px;
+            p {
+                color: #000000;
+                font-weight: 500;
+            }
             img {
                 width: 100px;
                 height: 100px;

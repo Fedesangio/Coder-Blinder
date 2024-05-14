@@ -47,6 +47,7 @@
     text-shadow: 2px 2px 4px $color-principal;
     @include flex ( flex, space-around, center);
     flex-direction: column;
+    flex-wrap: wrap;
         div {
             margin: 10px;
             margin-left: 16px;

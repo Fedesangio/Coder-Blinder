@@ -20,7 +20,7 @@
 /*variables*/
 $color-principal: black;
 $color-secundario:white;
-$color-terceario: #690507fc;
+$color-terceario: rgb(14, 80, 14);
 /*listas*/
 $fuentes:
 13px,
@@ -119,6 +119,8 @@ $fuentes:
     border-radius: 10px;
     padding: 5px 40px 5px 40px;
     margin-bottom: 20px;
+    transition: 2s;
+
 }
     
 
@@ -189,7 +191,8 @@ $fuentes:
         line-height: 24px;
         color: white;
         font-family: "truculenta";
-    
+
+
         hr {
             border-top-color: #bbb;
             opacity: 0.5;
@@ -228,7 +231,7 @@ $fuentes:
                 transition: 1s;
     
                 &:hover {
-                    color: red;
+                    color: rgb(23, 127, 23);
                 }
             }
         }

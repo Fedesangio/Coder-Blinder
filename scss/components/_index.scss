@@ -141,11 +141,16 @@ main  {
             font-size: 22px;
             color: $color-secundario;
             font-weight: 500;
-            padding: 90px;
+            padding: 50px;
             background-color: rgba(0, 0, 0, 0.871);
-            border-radius: 2px, solid, $color-secundario;
+            border-radius: 15px 0px 0px 15px;
+            span {
+                color: $color-terceario;
+                font-size: 24px;
+            }
 }
         img {
+            border-radius: 15px 15px 15px 15px;
             width: 500px;
             height: 400px;
 }
@@ -158,11 +163,16 @@ main  {
             font-size: 22px;
             color: $color-secundario;
             font-weight: 500;
-            padding: 70px;
+            padding: 50px;
             background-color: rgba(0, 0, 0, 0.832);
-            border-radius: 2px, solid, $color-secundario;
+            border-radius: 0px 15px 15px 0px;
+            span {
+                color: $color-terceario;
+                font-size: 24px;
+            }
         }
         img {
+            border-radius: 15px 15px 15px 15px;
             width: 500px;
             height: 400px;
 }
@@ -241,7 +251,4 @@ main  {
         right: 30px;
 }
 }
-
-
-
 
