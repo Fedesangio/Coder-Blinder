@@ -1,7 +1,7 @@
 .header-index {
     padding-top: 160px;
     background: linear-gradient(to bottom, rgba(233, 231, 231, 0), rgba(138, 134, 134, 0.863)), url(../img/fondo-prueba-126.jpg);
-    height: 100vh;
+
     background-size: cover;
     background-position: center ;
 .hero {
@@ -9,14 +9,14 @@
     flex-direction: column;
     height: calc(100vh - 104px);
 .hero-titulo-boton {
-    width: 80%;
+    width: 90%;
     flex-direction: column;
         h3 {
             font-size: 30px;
             color: $color-secundario;
             font-family: "truculenta";
             font-weight: bold;
-            text-shadow: 8px 8px 16px $color-principal;
+            text-shadow: 4px 4px 8px $color-principal;
             margin-bottom: 30px;
             }
         a {
@@ -227,4 +227,3 @@ main  {
         right: 30px;
 }
 }
-

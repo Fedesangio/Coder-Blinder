@@ -1,7 +1,7 @@
 @media screen and (max-width:1350px) {
 
     .header-index {
-        padding-top: 120px;
+        padding-top: 100px;
         .hero {
             justify-content: space-around;
             .hero-titulo-boton {
@@ -134,7 +134,7 @@
     @media screen and (max-width:790px) {
     
     .header-index {
-        padding-top: 90px;
+        padding-top: 100px;
         .hero {
             .hero-imagenes {
                 display: grid;
@@ -297,6 +297,7 @@
     
     /*--------------------------------------------------------------------------INDEX*/
     .header-index {
+        padding-top: 100px;
         .hero {
             .hero-titulo-boton {
                 h3 {
@@ -305,7 +306,7 @@
                     text-align: center;
                 }
                 a {
-                    margin-top: 40px;
+                    margin-top: 20px;
                     font-size: 40px; /* Tamaño de la fuente */
                     padding: 15px 20px 15px 20px;
                     height: auto;
