@@ -75,6 +75,14 @@ $fuentes:
     flex-direction: column;
 }
 
+.categorias-imagenes {
+    background-position: center;
+    transition-duration: 1s;
+        &:hover {
+            scale: 1.1;
+        }
+}
+
 .categorias p {
     height: 90px;
     text-align: center;
@@ -85,7 +93,6 @@ $fuentes:
     background-color: $color-principal;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-
 }
 
 .categorias a {
@@ -120,7 +127,6 @@ $fuentes:
     padding: 5px 40px 5px 40px;
     margin-bottom: 20px;
     transition: 2s;
-
 }
     
 

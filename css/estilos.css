@@ -55,6 +55,12 @@
   align-items: center;
   flex-direction: column; }
 
+.categorias-imagenes {
+  background-position: center;
+  transition-duration: 1s; }
+  .categorias-imagenes:hover {
+    scale: 1.1; }
+
 .categorias p {
   height: 90px;
   text-align: center;
@@ -213,24 +219,19 @@
 
 .header-index {
   padding-top: 160px;
-  background-image: url(../img/prueba124fondo.jpg);
+  background: linear-gradient(to bottom, rgba(233, 231, 231, 0), rgba(138, 134, 134, 0.863)), url(../img/fondo-prueba-126.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center; }
   .header-index .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: calc(100vh - 104px); }
     .header-index .hero .hero-titulo-boton {
       width: 80%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-bottom: 90px; }
+      flex-direction: column; }
       .header-index .hero .hero-titulo-boton h3 {
         font-size: 30px;
         color: white;
@@ -239,20 +240,13 @@
         text-shadow: 8px 8px 16px black;
         margin-bottom: 30px; }
       .header-index .hero .hero-titulo-boton a {
-        background-color: #ffffff8b;
-        /* Color de fondo */
-        /*border: 4px solid #e79406aa; /* Borde*/
+        background-color: #ffffffce;
         color: #036003;
-        /* Color del texto */
         text-shadow: 1px 1px 2px black;
         text-align: center;
-        /* Alineación del texto */
         text-decoration: none;
-        /* Sin   subrayado */
         font-size: 60px;
-        /* Tamaño de la fuente */
         border-radius: 10px;
-        /* Bordes redondeados */
         padding: 5px 40px 5px 40px;
         height: 100px;
         font-family: "truculenta";
@@ -300,29 +294,13 @@ main .categorias {
     align-content: center;
     /* Espacio entre las celdas */ }
     main .categorias div .imagen-primer-contenedor {
-      background-image: url(../img/productos/branca1.jpg);
-      background-position: center;
-      transition-duration: 1s; }
-      main .categorias div .imagen-primer-contenedor:hover {
-        scale: 1.1; }
+      background-image: url(../img/productos/branca1.jpg); }
     main .categorias div .imagen-segundo-contenedor {
-      background-image: url(../img/productos/tanqueray1.jpg);
-      background-position: center;
-      transition-duration: 1s; }
-      main .categorias div .imagen-segundo-contenedor:hover {
-        scale: 1.1; }
+      background-image: url(../img/productos/tanqueray1.jpg); }
     main .categorias div .imagen-tercer-contenedor {
-      background-image: url(../img/productos/jagermaister1.jpg);
-      background-position: center;
-      transition-duration: 1s; }
-      main .categorias div .imagen-tercer-contenedor:hover {
-        scale: 1.1; }
+      background-image: url(../img/productos/jagermaister1.jpg); }
     main .categorias div .imagen-cuarto-contenedor {
-      background-image: url(../img/productos/bluelabel1.jpg);
-      background-size: cover;
-      transition-duration: 1s; }
-      main .categorias div .imagen-cuarto-contenedor:hover {
-        scale: 1.1; }
+      background-image: url(../img/productos/bluelabel1.jpg); }
 
 .bienvenidos {
   margin-top: 20px;

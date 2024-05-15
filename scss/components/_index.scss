@@ -1,19 +1,16 @@
 .header-index {
     padding-top: 160px;
-    background-image: url(../img/prueba124fondo.jpg);
+    background: linear-gradient(to bottom, rgba(233, 231, 231, 0), rgba(138, 134, 134, 0.863)), url(../img/fondo-prueba-126.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center ;
 .hero {
-    @include flex (flex, center, center);
+    @include flex (flex, space-around, center);
     flex-direction: column;
     height: calc(100vh - 104px);
 .hero-titulo-boton {
     width: 80%;
-    @include flex (flex, space-evenly, flex-start);
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 90px;
         h3 {
             font-size: 30px;
             color: $color-secundario;
@@ -23,14 +20,13 @@
             margin-bottom: 30px;
             }
         a {
-            background-color: #ffffff8b; /* Color de fondo */
-            /*border: 4px solid #e79406aa; /* Borde*/
-            color: rgb(3, 96, 3); /* Color del texto */
+            background-color: #ffffffce;
+            color: rgb(3, 96, 3);
             text-shadow: 1px 1px 2px $color-principal;
-            text-align: center; /* Alineación del texto */
-            text-decoration: none; /* Sin   subrayado */
-            font-size: 60px; /* Tamaño de la fuente */
-            border-radius: 10px; /* Bordes redondeados */
+            text-align: center; 
+            text-decoration: none; 
+            font-size: 60px; 
+            border-radius: 10px; 
             padding: 5px 40px 5px 40px;
             height: 100px;
             font-family: "truculenta";
@@ -94,35 +90,15 @@ main  {
         align-content: center;            /* Espacio entre las celdas */
 .imagen-primer-contenedor{
     background-image: url(../img/productos/branca1.jpg);
-    background-position: center;
-    transition-duration: 1s;
-        &:hover {
-            scale: 1.1;
-        }
 }
 .imagen-segundo-contenedor{
     background-image: url(../img/productos/tanqueray1.jpg);
-    background-position: center;
-    transition-duration: 1s;
-        &:hover {
-            scale: 1.1;
-}
 }
 .imagen-tercer-contenedor{
     background-image: url(../img/productos/jagermaister1.jpg);
-    background-position: center;
-    transition-duration: 1s;
-        &:hover {
-            scale: 1.1;
-}
 }
 .imagen-cuarto-contenedor{
     background-image: url(../img/productos/bluelabel1.jpg);
-    background-size: cover;
-    transition-duration: 1s;
-        &:hover {
-            scale: 1.1;
-        }
 }
 }
 }
