@@ -218,8 +218,8 @@
       background-color: #ea4c89; }
 
 .header-index {
-  padding-top: 160px;
   background: linear-gradient(to bottom, rgba(233, 231, 231, 0), rgba(138, 134, 134, 0.863)), url(../img/fondo-prueba-126.jpg);
+  height: 100vh;
   background-size: cover;
   background-position: center; }
   .header-index .hero {
@@ -227,9 +227,11 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 104px); }
+    align-items: center;
+    height: 100vh;
+    padding-top: 150px; }
     .header-index .hero .hero-titulo-boton {
-      width: 90%;
+      width: 80%;
       flex-direction: column; }
       .header-index .hero .hero-titulo-boton h3 {
         font-size: 30px;
@@ -257,7 +259,6 @@
     .header-index .hero .hero-imagenes img {
       width: 150px;
       height: 150px;
-      margin: 0 10px 90px 5px;
       transition: 1s; }
       .header-index .hero .hero-imagenes img:hover {
         scale: 1.1; }
@@ -578,6 +579,12 @@ main .productos {
   font-weight: 400;
   color: white; }
 
+.formulario-mapa div {
+  margin: 0px 15px 30px 15px; }
+  .formulario-mapa div iframe {
+    width: 500px;
+    height: 500px; }
+
 body {
   font-family: "truculenta"; }
 
@@ -664,7 +671,7 @@ body {
       align-items: center; }
       .testimonials .testimonial-inner .testimonios .testimonios-col {
         box-sizing: border-box;
-        padding: 15px; }
+        padding-bottom: 15px; }
         .testimonials .testimonial-inner .testimonios .testimonios-col .testimonial {
           width: 300px;
           height: 450px;
@@ -691,25 +698,29 @@ body {
             margin-bottom: 20px; }
 
 @media screen and (max-width: 1350px) {
-  .header-index {
-    padding-top: 100px; }
-    .header-index .hero {
-      justify-content: space-around; }
-      .header-index .hero .hero-titulo-boton {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-bottom: 10px; }
-      .header-index .hero .hero-imagenes {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 80px;
-        row-gap: 5px; }
-        .header-index .hero .hero-imagenes img {
-          width: 120px;
-          height: 120px;
-          margin-bottom: 0px; }
+  .header-index .hero {
+    padding-top: 100px;
+    justify-content: space-around; }
+    .header-index .hero .hero-titulo-boton {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 10px; }
+    .header-index .hero .hero-imagenes {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      justify-items: center;
+      gap: 80px;
+      row-gap: 5px; }
+      .header-index .hero .hero-imagenes a {
+        width: 120px;
+        height: 120px; }
+      .header-index .hero .hero-imagenes img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0px; }
   main .nosotros h1 {
     font-size: 50px;
     margin: 0px 70px;
@@ -770,18 +781,22 @@ body {
     padding: 0px 15px; } }
 
 @media screen and (max-width: 790px) {
-  .header-index {
-    padding-top: 100px; }
+  .header-index .hero {
+    padding-top: 90px; }
     .header-index .hero .hero-imagenes {
+      width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, auto);
+      justify-items: center;
       gap: 30px;
       row-gap: 5px; }
+      .header-index .hero .hero-imagenes a {
+        width: 100px;
+        height: 100px; }
       .header-index .hero .hero-imagenes img {
         width: 100px;
-        height: 100px;
-        margin: 0px 5px 0px 5px; }
+        height: 100px; }
     .header-index .hero .hero-titulo-boton a {
       font-size: 60px;
       /* Tamaño de la fuente */
@@ -874,28 +889,34 @@ body {
     height: 200px !important;
     /* Ajusta el valor según la altura deseada */ }
   /*--------------------------------------------------------------------------INDEX*/
-  .header-index {
-    padding-top: 90px; }
-    .header-index .hero .hero-titulo-boton h3 {
-      font-size: 30px;
-      margin-bottom: 10px;
-      text-align: center; }
-    .header-index .hero .hero-titulo-boton a {
-      margin-top: 20px;
-      font-size: 40px;
-      /* Tamaño de la fuente */
-      padding: 15px 20px 15px 20px;
-      height: auto; }
-    .header-index .hero .hero-imagenes {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 15px;
-      row-gap: 5px; }
-      .header-index .hero .hero-imagenes img {
-        width: 70px;
-        height: 80px;
-        margin: 0px 0px; }
+  .header-index .hero .hero-titulo-boton h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center; }
+  .header-index .hero .hero-titulo-boton a {
+    margin-top: 20px;
+    font-size: 40px;
+    /* Tamaño de la fuente */
+    padding: 15px 20px 15px 20px;
+    height: auto; }
+  .header-index .hero .hero-imagenes {
+    width: 100%;
+    margin: 0px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    gap: 15px;
+    row-gap: 5px; }
+    .header-index .hero .hero-imagenes a {
+      align-items: center;
+      width: 70px;
+      height: 80px;
+      margin: 0px 0px; }
+    .header-index .hero .hero-imagenes img {
+      width: 70px;
+      height: 80px;
+      margin: 0px 0px; }
   main .nosotros h1 {
     font-size: 30px;
     padding: 20px 0px;
@@ -938,10 +959,15 @@ body {
   /*---------------------------------------------------PREGUNTAS FRECUENTES*/
   .accordion {
     padding: 0 0px; }
+  .testimonials .testimonial-inner .border {
+    width: 250px; }
   /*-------------------------------------------------------PAGINA FORMULARIO*/
   .pagina-contacto .contacto-form {
     width: 90%;
     margin-bottom: 15px; }
   .botones-consulta input {
     width: 100px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .formulario-mapa div iframe {
+    width: 300px;
+    height: 300px; } }

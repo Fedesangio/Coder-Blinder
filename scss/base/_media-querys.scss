@@ -1,8 +1,8 @@
 @media screen and (max-width:1350px) {
 
     .header-index {
-        padding-top: 100px;
         .hero {
+            padding-top: 100px;
             justify-content: space-around;
             .hero-titulo-boton {
                 display: flex;
@@ -11,11 +11,17 @@
                 margin-bottom: 10px;
         }
             .hero-imagenes {
+                width: 90%;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(2, auto);
+                justify-items: center;
                 gap: 80px;
                 row-gap: 5px;
+                    a {
+                        width: 120px;
+                        height: 120px;
+                    }
                     img {
                         width: 120px;
                         height: 120px;
@@ -134,18 +140,23 @@
     @media screen and (max-width:790px) {
     
     .header-index {
-        padding-top: 100px;
         .hero {
+            padding-top: 90px;
             .hero-imagenes {
+                width: 100%;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(2, auto);
+                justify-items: center;
                 gap: 30px;
                 row-gap: 5px;
+                a {
+                    width: 100px;
+                    height: 100px;
+                }
                 img {
                     width: 100px;
                     height: 100px;
-                    margin: 0px 5px 0px 5px;
             }
         }
     .hero-titulo-boton {
@@ -297,7 +308,6 @@
     
     /*--------------------------------------------------------------------------INDEX*/
     .header-index {
-        padding-top: 90px;
         .hero {
             .hero-titulo-boton {
                 h3 {
@@ -313,11 +323,20 @@
     }
     }
     .hero-imagenes {
+        width: 100%;
+        margin: 0px 15px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, auto);
+        justify-items: center;
         gap: 15px;
         row-gap: 5px;
+            a {
+                align-items: center;
+                width: 70px;
+                height: 80px;
+                margin: 0px 0px;
+            }
             img {
                 width: 70px;
                 height: 80px;
@@ -400,11 +419,19 @@
     }
     }
     /*---------------------------------------------------PREGUNTAS FRECUENTES*/
-    
-    .accordion {
-        padding: 0 0px;
+
+
+.accordion {
+    padding: 0 0px;
+}
+
+.testimonials {
+.testimonial-inner {
+    .border {
+        width: 250px;
     }
-    
+}
+}
     
     /*-------------------------------------------------------PAGINA FORMULARIO*/
     .pagina-contacto {
@@ -420,5 +447,12 @@
             font-size: 14px;
         }
     }
-    
+    .formulario-mapa {
+        div {
+            iframe {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
     }

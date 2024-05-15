@@ -1,15 +1,17 @@
 .header-index {
-    padding-top: 160px;
+ 
     background: linear-gradient(to bottom, rgba(233, 231, 231, 0), rgba(138, 134, 134, 0.863)), url(../img/fondo-prueba-126.jpg);
-
+    height: 100vh;
     background-size: cover;
     background-position: center ;
 .hero {
     @include flex (flex, space-around, center);
     flex-direction: column;
-    height: calc(100vh - 104px);
+    align-items: center;
+    height: 100vh;
+    padding-top: 150px;
 .hero-titulo-boton {
-    width: 90%;
+    width: 80%;
     flex-direction: column;
         h3 {
             font-size: 30px;
@@ -44,7 +46,6 @@
     img {
         width: 150px;
         height: 150px;
-        margin: 0 10px 90px 5px;
         transition: 1s;
     &:hover {
         scale: 1.1;

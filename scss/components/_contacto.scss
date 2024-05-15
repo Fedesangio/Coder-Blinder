@@ -86,4 +86,11 @@
             color: $color-secundario;                    
 }
 }
+    div {
+        margin: 0px 15px 30px 15px;
+        iframe {
+            width: 500px;
+            height: 500px;
+        }
+    }
 }
