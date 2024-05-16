@@ -321,7 +321,7 @@ main .categorias {
       background-color: rgba(0, 0, 0, 0.871);
       border-radius: 15px 0px 0px 15px; }
       .bienvenidos div p span {
-        color: #0e500e;
+        color: #2dac2d;
         font-size: 24px; }
     .bienvenidos div img {
       border-radius: 15px 15px 15px 15px;
@@ -339,7 +339,7 @@ main .categorias {
       background-color: rgba(0, 0, 0, 0.832);
       border-radius: 0px 15px 15px 0px; }
       .bienvenidos .bienvenidos-segundo-contenedor p span {
-        color: #0e500e;
+        color: #2dac2d;
         font-size: 24px; }
     .bienvenidos .bienvenidos-segundo-contenedor img {
       border-radius: 15px 15px 15px 15px;
@@ -450,6 +450,7 @@ main .productos {
     scale: 1.1;
     box-shadow: 0 0 20px black; } }
   main .productos div img {
+    padding-top: 10px;
     width: 150px;
     height: 150px; }
   main .productos div h3 {
@@ -676,7 +677,6 @@ body {
           width: 300px;
           height: 450px;
           backdrop-filter: blur(0px) saturate(57%);
-          -webkit-backdrop-filter: blur(0px) saturate(57%);
           background-color: rgba(39, 40, 34, 0.24);
           border-radius: 12px;
           border: 1px solid rgba(255, 255, 255, 0.125);
